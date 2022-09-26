@@ -7,12 +7,14 @@ const VARIANT = {
   secondary: "outline outline-2 text-primary hover:text-red-400",
 };
 
-const STYLE = "w-fit px-7 py-3 text-center rounded-3xl font-medium mx-2 my-3 transition";
+const STYLE =
+  "w-fit px-7 py-3 text-center rounded-3xl font-medium mx-2 my-3 transition";
 
 const Button = ({
   isLink,
   onClick,
   type,
+  className,
   variant = "primary",
   children = "See More",
 }) => {
@@ -20,7 +22,7 @@ const Button = ({
     return (
       <Link
         to={isLink}
-        className={classNames(STYLE, VARIANT[variant], "")}
+        className={classNames(className, STYLE, VARIANT[variant])}
         onClick={onClick}
         type={type}
       >

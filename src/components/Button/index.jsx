@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
+import Text from "../Text";
 
 const VARIANT = {
   primary: "bg-secondary text-white hover:bg-slate-700",
@@ -8,7 +9,7 @@ const VARIANT = {
 };
 
 const STYLE =
-  "w-fit px-7 py-3 text-center rounded-3xl font-medium mx-2 my-3 transition";
+  "w-fit px-10 py-3 text-center rounded-full font-medium mx-2 my-3 transition";
 
 const Button = ({
   isLink,
@@ -26,7 +27,9 @@ const Button = ({
         onClick={onClick}
         type={type}
       >
-        {children}
+        <Text variant="p2" color="white">
+          {children}
+        </Text>
       </Link>
     );
   }
@@ -37,7 +40,9 @@ const Button = ({
       onClick={onClick}
       type={type}
     >
-      {children}
+      <Text variant="p2" color="white">
+        {children}
+      </Text>
     </button>
   );
 };

@@ -7,6 +7,7 @@ import SectionOne from "./Section/sectionOne";
 import SectionTwo from "./Section/sectionTwo";
 import SectionThree from "./Section/sectionThree";
 import SectionFour from "./Section/sectionFour";
+import SectionFive from "./Section/sectionFive";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <SectionTwo Text={Text} HAND={HAND} />
       <SectionThree Text={Text} />
       <SectionFour Text={Text} />
+      <SectionFive Text={Text} />
 
     </>
   );

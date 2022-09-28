@@ -5,10 +5,9 @@ import EXPO from "../../../assets/homepage/expo.png";
 import COMPETITION from "../../../assets/homepage/competition.png";
 import CATALOG from "../../../assets/homepage/catalog.png";
 import MAP from "../../../assets/homepage/map.png";
-
 const sectionThree = ({ Text }) => {
   return (
-    <div className="bg-whatsOn-bg h-[800px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8 px-3">
+    <div className="bg-whatsOn-bg h-fit lg:h-[800px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8 px-3 place-content-center overflow-hidden">
       <Text
         variant="h1"
         weight="bold"

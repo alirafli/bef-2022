@@ -88,7 +88,7 @@ const sectionFive = ({ Text }) => {
         FAQ
       </Text>
       <div className=" w-11/12 lg:w-7/12 h-fit rounded-3xl bg-secondary mx-auto text-white flex flex-col justify-center">
-        <Slider {...settings} className="h-full">
+        <Slider {...settings} >
           {items.map((data) => {
             return (
               <div className="px-5 sm:px-20 my-5 md:py-10">

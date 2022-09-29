@@ -28,3 +28,9 @@
   color: #61dafb;
 }
 
+.slick-list {
+  margin: 0 -5px;
+}
+.slick-slide > div {
+  padding: 0 20px;
+}

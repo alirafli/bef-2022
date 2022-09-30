@@ -3,8 +3,6 @@ import Text from "../Text";
 import Footer from "../Footer";
 import MOUNTAIN from "../../assets/homepage/mountain.png";
 import OBJECT1 from "../../assets/medPart/object1.png";
-import OBJECT2 from "../../assets/medPart/object2.png";
-import OBJECT3 from "../../assets/medPart/object3.png";
 import OBJECT4 from "../../assets/medPart/object4.png";
 import OBJECT5 from "../../assets/medPart/object5.png";
 

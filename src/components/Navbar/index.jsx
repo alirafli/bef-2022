@@ -55,8 +55,8 @@ const Navbar = () => {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? "text-orange-500"
-                              : "text-black hover:text-orange-400",
+                              ? "text-orange-600"
+                              : "text-zinc-600 hover:text-orange-600",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}

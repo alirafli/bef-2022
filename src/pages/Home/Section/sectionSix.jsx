@@ -3,6 +3,40 @@ import Slider from "react-slick";
 import PEOPLE1 from "../../../assets/homepage/people1.png";
 import PEOPLE2 from "../../../assets/homepage/people2.png";
 import PEOPLE3 from "../../../assets/homepage/people3.png";
+import ArrowRight from "../../../assets/homepage/arrow_right.svg";
+import ArrowLeft from "../../../assets/homepage/arrow_left.svg";
+
+function SlickArrowRight({ style, ...props }) {
+  return (
+    <img
+      src={ArrowRight}
+      alt="nextArrow"
+      style={{
+        ...style,
+        display: "block",
+        transform: "scale(1.5)",
+        zIndex: "1",
+      }}
+      {...props}
+    />
+  );
+}
+
+function SlickArrowLeft({ style, ...props }) {
+  return (
+    <img
+      src={ArrowLeft}
+      alt="nextArrow"
+      style={{
+        ...style,
+        display: "block",
+        transform: "scale(1.5)",
+        zIndex: "1",
+      }}
+      {...props}
+    />
+  );
+}
 
 const sectionSix = ({ Text }) => {
   const settings = {
@@ -11,6 +45,8 @@ const sectionSix = ({ Text }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    nextArrow: <SlickArrowRight />,
+    prevArrow: <SlickArrowLeft />,
     responsive: [
       {
         breakpoint: 1024,

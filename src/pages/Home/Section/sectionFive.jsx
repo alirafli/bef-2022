@@ -1,11 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
+import ArrowRight from "../../../assets/homepage/arrow_right.svg";
+import ArrowLeft from "../../../assets/homepage/arrow_left.svg";
 
-function ArrowStyle(props) {
-  const { className, style, onClick } = props;
+function SlickArrowRight({ style, ...props }) {
   return (
-    <div
-      className={className}
+    <img
+      src={ArrowRight}
+      alt="nextArrow"
       style={{
         ...style,
         display: "block",
@@ -13,7 +15,24 @@ function ArrowStyle(props) {
         transform: "scale(1.5)",
         zIndex: "1",
       }}
-      onClick={onClick}
+      {...props}
+    />
+  );
+}
+
+function SlickArrowLeft({ style, ...props }) {
+  return (
+    <img
+      src={ArrowLeft}
+      alt="nextArrow"
+      style={{
+        ...style,
+        display: "block",
+        margin: "0 60px 0 60px",
+        transform: "scale(1.5)",
+        zIndex: "1",
+      }}
+      {...props}
     />
   );
 }
@@ -28,8 +47,8 @@ const sectionFive = ({ Text }) => {
     cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <ArrowStyle />,
-    prevArrow: <ArrowStyle />,
+    nextArrow: <SlickArrowRight />,
+    prevArrow: <SlickArrowLeft />,
   };
 
   const items = [
@@ -88,7 +107,7 @@ const sectionFive = ({ Text }) => {
         FAQ
       </Text>
       <div className=" w-11/12 lg:w-7/12 h-fit rounded-3xl bg-secondary mx-auto text-white flex flex-col justify-center">
-        <Slider {...settings} >
+        <Slider {...settings}>
           {items.map((data) => {
             return (
               <div className="px-5 sm:px-20 my-5 md:py-10">

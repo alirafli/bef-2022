@@ -6,7 +6,7 @@ import PEOPLE3 from "../../../assets/homepage/people3.png";
 import ArrowRight from "../../../assets/homepage/arrow_right.svg";
 import ArrowLeft from "../../../assets/homepage/arrow_left.svg";
 
-function SlickArrowRight({ style, ...props }) {
+function SlickArrowRight({ currentSlide, slideCount, style, ...props }) {
   return (
     <img
       src={ArrowRight}
@@ -22,7 +22,7 @@ function SlickArrowRight({ style, ...props }) {
   );
 }
 
-function SlickArrowLeft({ style, ...props }) {
+function SlickArrowLeft({ currentSlide, slideCount, style, ...props }) {
   return (
     <img
       src={ArrowLeft}
@@ -44,7 +44,8 @@ const sectionSix = ({ Text }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    cssEase: "linear",
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
     responsive: [
@@ -52,7 +53,7 @@ const sectionSix = ({ Text }) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -61,8 +62,8 @@ const sectionSix = ({ Text }) => {
         breakpoint: 820,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -106,10 +107,14 @@ const sectionSix = ({ Text }) => {
       <Text variant="p2">What they say about us?</Text>
       <div className="w-10/12 lg:w-10/12 mt-14">
         <Slider {...settings}>
-          {items.map((data) => {
+          {items.map((data, i) => {
             return (
-              <div className="p-5 bg-secondary rounded-3xl h-[45rem] md:h-[52rem]">
-                <img src={data.image} alt="people" className="mx-auto mb-3" />
+              <div className="p-5 bg-secondary rounded-3xl h-[45rem] md:h-[53rem]" key={i}>
+                <img
+                  src={data.image}
+                  alt="people"
+                  className="mx-auto mb-3 scale-75 md:scale-100"
+                />
                 <Text
                   variant="h2"
                   weight="bold"

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import ArrowRight from "../../../assets/homepage/arrow_right.svg";
 import ArrowLeft from "../../../assets/homepage/arrow_left.svg";
 
-function SlickArrowRight({ style, ...props }) {
+function SlickArrowRight({ currentSlide, slideCount, style, ...props }) {
   return (
     <img
       src={ArrowRight}
@@ -20,7 +20,7 @@ function SlickArrowRight({ style, ...props }) {
   );
 }
 
-function SlickArrowLeft({ style, ...props }) {
+function SlickArrowLeft({ currentSlide, slideCount, style, ...props }) {
   return (
     <img
       src={ArrowLeft}
@@ -108,9 +108,9 @@ const sectionFive = ({ Text }) => {
       </Text>
       <div className=" w-11/12 lg:w-7/12 h-fit rounded-3xl bg-secondary mx-auto text-white flex flex-col justify-center">
         <Slider {...settings}>
-          {items.map((data) => {
+          {items.map((data, i) => {
             return (
-              <div className="px-5 sm:px-20 my-5 md:py-10">
+              <div className="px-5 sm:px-20 my-5 md:py-10" key={i}>
                 <Text
                   variant="h2"
                   weight="semiBold"

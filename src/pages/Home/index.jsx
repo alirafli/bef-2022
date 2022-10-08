@@ -9,10 +9,14 @@ import SectionThree from "./Section/sectionThree";
 import SectionFour from "./Section/sectionFour";
 import SectionFive from "./Section/sectionFive";
 import SectionSix from "./Section/sectionSix";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>BEF | Homepage</title>
+      </Helmet>
       <Navbar />
       <SectionOne Button={Button} Text={Text} MASCOT={MASCOT} />
       <SectionTwo Text={Text} HAND={HAND} />

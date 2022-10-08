@@ -9,11 +9,6 @@ import OBJECT5 from "../../assets/medPart/object5.png";
 const MedPart = ({ content }) => {
   return (
     <div className="relative bg-gradient-to-b from-transparent to-[#AE92F6] overflow-hidden">
-      <img
-        src={OBJECT1}
-        alt="object1"
-        className="absolute top-10 sm:-top-20 -left-48 sm:-left-60  scale-75 lg:scale-100"
-      />
       <div className="mb-96">{content}</div>
       <img
         src={OBJECT1}

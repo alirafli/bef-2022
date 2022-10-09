@@ -18,10 +18,11 @@ const Routers = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route element={<Navbar />}>
+          <Route path="/" element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

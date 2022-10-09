@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
-    <>
+    <div className="pt-16">
       <Helmet>
         <title>BEF | Homepage</title>
       </Helmet>
@@ -23,7 +23,7 @@ const Home = () => {
       <SectionFour Text={Text} />
       <SectionFive Text={Text} />
       <MedPart content={<SectionSix Text={Text} />} />
-    </>
+    </div>
   );
 };
 

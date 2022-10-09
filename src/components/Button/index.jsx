@@ -21,15 +21,16 @@ const Button = ({
 }) => {
   if (isLink) {
     return (
-      <Link
-        to={isLink}
-        className={classNames(className, STYLE, VARIANT[variant])}
-        onClick={onClick}
-        type={type}
-      >
-        <Text variant="p2" color="white">
-          {children}
-        </Text>
+      <Link to={isLink}>
+        <button
+          className={classNames(STYLE, VARIANT[variant])}
+          onClick={onClick}
+          type={type}
+        >
+          <Text variant="p2" color="white">
+            {children}
+          </Text>
+        </button>
       </Link>
     );
   }

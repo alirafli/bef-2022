@@ -1,14 +1,15 @@
-import React, { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../../assets/logo/logo-mw2.svg";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Tentang", href: "#", current: false },
-  { name: "MW INFO", href: "#", current: false },
-  { name: "Data Pengurus dan Alumni", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Home", href: "/" },
+  { name: "Tentang", href: "/coming-soon" },
+  { name: "MW INFO", href: "/coming-soon" },
+  { name: "Data Pengurus dan Alumni", href: "/coming-soon" },
+  { name: "Contact", href: "coming-soon" },
 ];
 
 function classNames(...classes) {
@@ -18,7 +19,7 @@ function classNames(...classes) {
 const Navbar = () => {
   return (
     <>
-      <Disclosure as="nav" className="bg-white">
+      <Disclosure as="nav" className="bg-white fixed w-full z-50 bg-opacity-75">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -50,19 +51,22 @@ const Navbar = () => {
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <a
+                        <NavLink
                           key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "text-orange-600"
-                              : "text-zinc-600 hover:text-orange-600",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
+                          to={item.href}
+                          smooth={true}
+                          duration={500}
+                          className={({ isActive }) => {
+                            return classNames(
+                              isActive
+                                ? " text-orange-600"
+                                : "text-zinc-600 hover:text-orange-600",
+                              "px-3 py-2 rounded-md text-sm font-medium"
+                            );
+                          }}
                         >
                           {item.name}
-                        </a>
+                        </NavLink>
                       ))}
                     </div>
                   </div>
@@ -73,26 +77,28 @@ const Navbar = () => {
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
-                  <Disclosure.Button
+                  <NavLink
                     key={item.name}
-                    as="a"
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "block px-3 py-2 rounded-md text-base font-medium"
-                    )}
+                    to={item.href}
+                    className={({ isActive }) => {
+                      return classNames(
+                        isActive
+                          ? " bg-gray-100 text-orange-600"
+                          : "text-zinc-600 hover:bg-gray-100 hover:text-orange-600",
+                        "block px-3 py-2 rounded-md text-base font-medium"
+                      );
+                    }}
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
-                  </Disclosure.Button>
+                  </NavLink>
                 ))}
               </div>
             </Disclosure.Panel>
           </>
         )}
       </Disclosure>
+      <Outlet />
     </>
   );
 };

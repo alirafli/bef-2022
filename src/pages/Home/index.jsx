@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, MedPart, Text, Button } from "../../components";
+import { MedPart, Text, Button } from "../../components";
 import HAND from "../../assets/homepage/hand.png";
 import MASCOT from "../../assets/mascot.png";
 
@@ -17,7 +17,6 @@ const Home = () => {
       <Helmet>
         <title>BEF | Homepage</title>
       </Helmet>
-      <Navbar />
       <SectionOne Button={Button} Text={Text} MASCOT={MASCOT} />
       <SectionTwo Text={Text} HAND={HAND} />
       <SectionThree Text={Text} />

@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
 import SEMINAR from "../../../assets/homepage/seminar.png";
 import EXPO from "../../../assets/homepage/expo.png";
 import COMPETITION from "../../../assets/homepage/competition.png";
@@ -19,16 +18,11 @@ const sectionThree = ({ Text }) => {
       </Text>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 w-fit mx-auto mt-7">
-        <MenuWidget to="#" text="Seminar" image={SEMINAR} alt="seminar" />
-        <MenuWidget to="#" text="Expo" image={EXPO} alt="expo" />
-        <MenuWidget
-          to="#"
-          text="Competition"
-          image={COMPETITION}
-          alt="competition"
-        />
-        <MenuWidget to="#" text="Catalog" image={CATALOG} alt="catalog" />
-        <MenuWidget to="#" text="MAP" image={MAP} alt="map" />
+        <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" />
+        <MenuWidget text="Expo" image={EXPO} alt="expo" />
+        <MenuWidget text="Competition" image={COMPETITION} alt="competition" />
+        <MenuWidget text="Catalog" image={CATALOG} alt="catalog" />
+        <MenuWidget text="MAP" image={MAP} alt="map" />
       </div>
     </div>
   );

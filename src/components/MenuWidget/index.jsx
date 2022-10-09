@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Tilt from "react-tilt";
 import Text from "../Text";
 
-const MenuWidget = ({ to, image, text, alt }) => {
+const MenuWidget = ({ to="/coming-soon", image, text, alt }) => {
   return (
     <Tilt
       options={{ max: 30, scale: 1 }}

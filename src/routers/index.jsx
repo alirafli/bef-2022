@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import ComingSoon from "../pages/ComingSoon";
+import Seminar from "../pages/Seminar";
 import { Navbar } from "../components";
 
 const ScrollToTop = () => {
@@ -22,6 +23,7 @@ const Routers = () => {
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route element={<Navbar />}>
           <Route path="/" element={<Home />} />
+          <Route path="/seminar" element={<Seminar />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -13,7 +13,7 @@ const Footer = () => {
     { image: FACEBOOK, link: "https://www.facebook.com/" },
   ];
   return (
-    <div className="bg-secondary text-center py-12 px-5">
+    <div className="bg-secondary text-center py-12 px-5 z-10 relative" name="contact">
       <Text
         variant="h1"
         color="white"
@@ -25,8 +25,8 @@ const Footer = () => {
       <div className="grid grid-cols-4 gap-x-5 scale-75 md:scale-100 md:gap-x-16 mx-auto w-fit">
         {data.map((e, key) => {
           return (
-            <a href={e.link} target="_blank" key={key}>
-              <img src={e.image} alt={e.image.toString} />
+            <a href={e.link} target="_blank"  rel="noreferrer" key={key}>
+              <img src={e.image} alt="icon" />
             </a>
           );
         })}

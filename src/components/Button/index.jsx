@@ -16,6 +16,7 @@ const Button = ({
   onClick,
   type,
   className,
+  disabled,
   variant = "primary",
   children = "See More",
 }) => {
@@ -27,11 +28,26 @@ const Button = ({
           onClick={onClick}
           type={type}
         >
-          <Text variant="p2" color="white">
+          <Text variant="p2" color="white" className="text-white">
             {children}
           </Text>
         </button>
       </Link>
+    );
+  }
+
+  if (disabled) {
+    return (
+      <button
+        className={classNames(STYLE, "bg-secondary/70")}
+        onClick={onClick}
+        type={type}
+        disabled
+      >
+        <Text variant="p2" color="white" className="text-white">
+          {children}
+        </Text>
+      </button>
     );
   }
 
@@ -41,7 +57,7 @@ const Button = ({
       onClick={onClick}
       type={type}
     >
-      <Text variant="p2" color="white">
+      <Text variant="p2" color="white" className="text-white">
         {children}
       </Text>
     </button>

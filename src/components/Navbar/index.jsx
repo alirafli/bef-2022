@@ -37,16 +37,20 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                   <div className="flex flex-shrink-0 items-center">
-                    <img
-                      className="block h-8 w-auto lg:hidden"
-                      src={logo}
-                      alt="Your Company"
-                    />
-                    <img
-                      className="hidden h-10 w-auto lg:block"
-                      src={logo}
-                      alt="Your Company"
-                    />
+                    <NavLink to="/">
+                      <img
+                        className="block h-8 w-auto lg:hidden"
+                        src={logo}
+                        alt="Your Company"
+                      />
+                    </NavLink>
+                    <NavLink to="/">
+                      <img
+                        className="hidden h-10 w-auto lg:block"
+                        src={logo}
+                        alt="Your Company"
+                      />
+                    </NavLink>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">

@@ -13,17 +13,17 @@ const MedPart = ({ content }) => {
       <img
         src={OBJECT1}
         alt="object1"
-        className="absolute z-10 top-[87rem] -right-52 sm:-right-72 scale-50 sm:scale-75"
+        className="absolute z-10 bottom-[40rem] lg:bottom-[50rem] -right-32 sm:-right-72 scale-75"
       />
       <img
         src={OBJECT5}
         alt="object1"
-        className="absolute z-10 top-[110rem] -left-32 sm:-left-20 scale-75 sm:scale-100"
+        className="absolute z-10 bottom-[25rem] lg:bottom-[43rem] -left-32 sm:-left-20 scale-75 lg:scale-100"
       />
       <img
         src={OBJECT4}
         alt="object1"
-        className="absolute z-10 top-[70rem] sm:top-[77rem] sm:right-96 scale-50 sm:scale-100"
+        className="absolute z-10 bottom-[57rem] lg:bottom-[70rem] sm:right-96 scale-75 lg:scale-100"
       />
       <div className="relative bg-secondary bg-opacity-75 flex flex-col justify-center items-center h-[720px] w-10/12 mx-auto rounded-3xl p-5 md:p-24 z-20">
         <Text

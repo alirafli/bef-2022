@@ -20,7 +20,7 @@ const sectionThree = ({ Text }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 w-fit mx-auto mt-7">
         <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" to="/seminar" />
         <MenuWidget text="Expo" image={EXPO} alt="expo" />
-        <MenuWidget text="Competition" image={COMPETITION} alt="competition" />
+        <MenuWidget text="Competition" image={COMPETITION} alt="competition" to="/competition" />
         <MenuWidget text="Catalog" image={CATALOG} alt="catalog" />
         <MenuWidget text="MAP" image={MAP} alt="map" />
       </div>

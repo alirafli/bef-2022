@@ -1,7 +1,7 @@
 import React from "react";
 import { MedPart, Text, Button } from "../../components";
 import BG from "../../assets/bef_bg.png";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
   return (
@@ -18,7 +18,7 @@ const ComingSoon = () => {
           className="text-white absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col"
         >
           Coming Soon!
-          <Button isLink="/">go to homepage</Button>
+          <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
         </Text>
       </div>
       <MedPart />

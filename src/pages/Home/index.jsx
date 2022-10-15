@@ -9,7 +9,7 @@ import SectionThree from "./Section/sectionThree";
 import SectionFour from "./Section/sectionFour";
 import SectionFive from "./Section/sectionFive";
 import SectionSix from "./Section/sectionSix";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (

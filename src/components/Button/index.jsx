@@ -24,7 +24,7 @@ const Button = ({
     return (
       <Link to={isLink}>
         <button
-          className={classNames(STYLE, VARIANT[variant])}
+          className={classNames(STYLE, VARIANT[variant], className)}
           onClick={onClick}
           type={type}
         >
@@ -39,7 +39,7 @@ const Button = ({
   if (disabled) {
     return (
       <button
-        className={classNames(STYLE, "bg-secondary/70")}
+        className={classNames(STYLE, "bg-secondary/70", className)}
         onClick={onClick}
         type={type}
         disabled
@@ -53,7 +53,7 @@ const Button = ({
 
   return (
     <button
-      className={classNames(STYLE, VARIANT[variant])}
+      className={classNames(STYLE, VARIANT[variant], className)}
       onClick={onClick}
       type={type}
     >

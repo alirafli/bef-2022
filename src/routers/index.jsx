@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Home from "../pages/Home";
 import ComingSoon from "../pages/ComingSoon";
 import Seminar from "../pages/Seminar";
@@ -18,17 +19,19 @@ const ScrollToTop = () => {
 
 const Routers = () => {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/coming-soon" element={<ComingSoon />} />
-        <Route element={<Navbar />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/seminar" element={<Seminar />} />
-          <Route path="/competition" element={<Lomba />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route element={<Navbar />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/seminar" element={<Seminar />} />
+            <Route path="/competition" element={<Lomba />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

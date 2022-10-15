@@ -1,7 +1,7 @@
 import React from "react";
 import { MedPart, Text, Button } from "../../components";
 import BG from "../../assets/bef_bg.png";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import SectionTwo from "./Section/sectionTwo";
+import { Helmet } from "react-helmet-async";
 import { Button, MedPart, Text } from "../../components";
 import BRAVO from "../../assets/bravo.svg";
 
@@ -50,8 +51,7 @@ const Lomba = () => {
         </div>
         <img src={BRAVO} alt="bravo banner" className="hidden sm:block" />
       </div>
-      <div></div>
-      <MedPart />
+      <MedPart content={<SectionTwo />} />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, Button, MedPart } from "../../components";
 import Countdown from "react-countdown";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   const data = [

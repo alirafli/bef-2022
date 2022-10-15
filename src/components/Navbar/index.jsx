@@ -58,7 +58,7 @@ const Navbar = () => {
                         <NavLink
                           key={item.name}
                           to={item.href}
-                          smooth={true}
+                          smooth="true"
                           duration={500}
                           className={({ isActive }) => {
                             return classNames(

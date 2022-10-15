@@ -18,7 +18,7 @@ const ComingSoon = () => {
           className="text-white absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col"
         >
           Coming Soon!
-          <Button isLink="/">go to homepage</Button>
+          <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
         </Text>
       </div>
       <MedPart />

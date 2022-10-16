@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Home from "../pages/Home";
 import ComingSoon from "../pages/ComingSoon";
 import Seminar from "../pages/Seminar";
+import Expo from "../pages/Expo";
 import { Navbar } from "../components";
 import Lomba from "../pages/Lomba";
 
@@ -28,6 +29,7 @@ const Routers = () => {
             <Route path="/" element={<Home />} />
             <Route path="/seminar" element={<Seminar />} />
             <Route path="/competition" element={<Lomba />} />
+            <Route path="/Expo" element={<Expo />} />
           </Route>
         </Routes>
       </BrowserRouter>

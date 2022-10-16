@@ -1,6 +1,5 @@
 import React from "react";
 import { MedPart, Text, Button } from "../../components";
-import BG from "../../assets/bef_bg.png";
 import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
@@ -9,17 +8,16 @@ const ComingSoon = () => {
       <Helmet>
         <title>BEF | Coming Soon</title>
       </Helmet>
-      <div className="text-center bg-cover relative bg-center bg-no-repeat overflow-hidden">
-        <img src={BG} alt="background" className="w-full" />
+      <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
         <Text
           color="white"
           weight="bold"
           variant="h1"
-          className="text-white absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col"
+          className="text-white mt-10"
         >
           Coming Soon!
-          <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
         </Text>
+          <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
       </div>
       <MedPart />
     </div>

@@ -7,7 +7,7 @@ import MAP from "../../../assets/homepage/map.png";
 import { MenuWidget } from "../../../components";
 const sectionThree = ({ Text }) => {
   return (
-    <div className="bg-whatsOn-bg h-fit lg:h-[800px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8 px-3 place-content-center overflow-hidden">
+    <div className="bg-whatsOn-bg h-fit lg:h-[800px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8 px-3 place-content-center overflow-hidden" name="whatsOn">
       <Text
         variant="h1"
         weight="bold"

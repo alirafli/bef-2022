@@ -1,4 +1,5 @@
 import React from "react";
+import SectionTwo from "./Section/sectionTwo";
 import { Text, Button, MedPart } from "../../components";
 import Countdown from "react-countdown";
 import { Helmet } from "react-helmet-async";
@@ -66,7 +67,7 @@ const Seminar = () => {
           <Button>Pesan Tiket</Button>
         </div>
       </div>
-      <div className="bg-secondary text-center py-20 px-5 md:px-52">
+      <div className="bg-secondary text-center py-20 px-5 md:px-52 mb-20">
         <Text
           variant="h1"
           weight="bold"
@@ -84,7 +85,7 @@ const Seminar = () => {
           5.0.
         </Text>
       </div>
-      <MedPart />
+      <MedPart content={<SectionTwo />} />
     </div>
   );
 };

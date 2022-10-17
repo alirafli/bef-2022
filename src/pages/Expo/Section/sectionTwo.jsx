@@ -25,7 +25,7 @@ const sectionTwo = () => {
           color="white"
           className="text-white"
         >
-          manfaat Kegiatan
+          Manfaat Kegiatan
         </Text>
       </div>
       <div className="bg-secondary mx-auto w-11/12 sm:w-10/12 md:w-8/12 rounded-3xl px-5 md:px-10 lg:px-24 py-10">

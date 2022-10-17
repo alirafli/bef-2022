@@ -7,13 +7,25 @@ import TWITTER from "../../assets/sosmed/twitter.svg";
 
 const Footer = () => {
   const data = [
-    { image: INSTAGRAM, link: "https://www.instagram.com/" },
-    { image: TIKTOK, link: "https://www.tiktok.com/" },
-    { image: TWITTER, link: "https://www.twitter.com/" },
-    { image: FACEBOOK, link: "https://www.facebook.com/" },
+    { image: INSTAGRAM, link: "https://www.instagram.com/bef2022_/" },
+    {
+      image: TIKTOK,
+      link: "https://www.tiktok.com/@bef.2022?_t=8WYV2f3jf2v&_r=1",
+    },
+    {
+      image: TWITTER,
+      link: "https://twitter.com/bef2022official?s=21&t=XSVk36A8Dazq5gt0zjGnSQ",
+    },
+    {
+      image: FACEBOOK,
+      link: "https://www.facebook.com/brawijayaentrepreneurfest",
+    },
   ];
   return (
-    <div className="bg-secondary text-center py-12 px-5 z-10 relative" name="contact">
+    <div
+      className="bg-secondary text-center py-12 px-5 z-10 relative"
+      name="contact"
+    >
       <Text
         variant="h1"
         color="white"
@@ -25,7 +37,7 @@ const Footer = () => {
       <div className="grid grid-cols-4 gap-x-5 scale-75 md:scale-100 md:gap-x-16 mx-auto w-fit">
         {data.map((e, key) => {
           return (
-            <a href={e.link} target="_blank"  rel="noreferrer" key={key}>
+            <a href={e.link} target="_blank" rel="noreferrer" key={key}>
               <img src={e.image} alt="icon" />
             </a>
           );

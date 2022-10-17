@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
-import { Text, Button, MedPart } from "../../components";
+import { Text, Button, MedPart, AnimateDiv } from "../../components";
 import { Helmet } from "react-helmet-async";
 
 const Expo = () => {
@@ -9,7 +9,7 @@ const Expo = () => {
     { day: "Day 2", time: "09.00 - 14.00 WIB" },
   ];
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Expo</title>
       </Helmet>
@@ -69,7 +69,7 @@ const Expo = () => {
         </Text>
       </div>
       <MedPart content={<SectionTwo/>}/>
-    </div>
+    </AnimateDiv>
   );
 };
 

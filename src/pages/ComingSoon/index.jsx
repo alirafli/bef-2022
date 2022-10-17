@@ -1,10 +1,10 @@
 import React from "react";
-import { MedPart, Text, Button } from "../../components";
+import { MedPart, Text, Button, AnimateDiv } from "../../components";
 import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
   return (
-    <div>
+    <AnimateDiv>
       <Helmet>
         <title>BEF | Coming Soon</title>
       </Helmet>
@@ -20,7 +20,7 @@ const ComingSoon = () => {
           <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
       </div>
       <MedPart />
-    </div>
+    </AnimateDiv>
   );
 };
 

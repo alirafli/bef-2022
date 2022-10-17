@@ -1,5 +1,5 @@
 import React from "react";
-import { MedPart, Text, Button } from "../../components";
+import { MedPart, Text, Button, AnimateDiv } from "../../components";
 import HAND from "../../assets/homepage/hand.png";
 import MASCOT from "../../assets/mascot.png";
 
@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Homepage</title>
       </Helmet>
@@ -23,7 +23,7 @@ const Home = () => {
       <SectionFour Text={Text} />
       <SectionFive Text={Text} />
       <MedPart content={<SectionSix Text={Text} />} />
-    </div>
+    </AnimateDiv>
   );
 };
 

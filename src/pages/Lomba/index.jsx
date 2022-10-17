@@ -1,12 +1,12 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
 import { Helmet } from "react-helmet-async";
-import { ButtonScroll, MedPart, Text } from "../../components";
+import { ButtonScroll, MedPart, Text, AnimateDiv } from "../../components";
 import BRAVO from "../../assets/bravo.svg";
 
 const Lomba = () => {
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Lomba</title>
       </Helmet>
@@ -52,7 +52,7 @@ const Lomba = () => {
         <img src={BRAVO} alt="bravo banner" className="hidden sm:block" />
       </div>
       <MedPart content={<SectionTwo />} />
-    </div>
+    </AnimateDiv>
   );
 };
 

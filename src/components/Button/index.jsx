@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import Text from "../Text";
 
 const VARIANT = {
@@ -11,7 +12,7 @@ const VARIANT = {
 const STYLE =
   "w-fit px-10 py-3 text-center rounded-full font-medium mx-2 my-3 transition";
 
-const Button = ({
+export const Button = ({
   isLink,
   onClick,
   type,
@@ -64,4 +65,25 @@ const Button = ({
   );
 };
 
-export default Button;
+export const ButtonScroll = ({
+  onClick,
+  linkTo = "",
+  type,
+  className,
+  variant = "primary",
+  children = "See More",
+}) => {
+  return (
+    <LinkScroll to={linkTo} smooth={true} duration={600}>
+      <button
+        className={classNames(STYLE, VARIANT[variant], className)}
+        onClick={onClick}
+        type={type}
+      >
+        <Text variant="p2" color="white" className="text-white">
+          {children}
+        </Text>
+      </button>
+    </LinkScroll>
+  );
+};

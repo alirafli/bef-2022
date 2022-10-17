@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
 import { Helmet } from "react-helmet-async";
-import { Button, MedPart, Text } from "../../components";
+import { ButtonScroll, MedPart, Text } from "../../components";
 import BRAVO from "../../assets/bravo.svg";
 
 const Lomba = () => {
@@ -24,13 +24,13 @@ const Lomba = () => {
           Nantikan perlombaan di event BEF Tahun Depan!
         </Text>
         <div>
-          <Button>Tentang Bravo</Button>
-          <Button>Dokumentasi</Button>
+          <ButtonScroll linkTo="bravoAbout">Tentang Bravo</ButtonScroll>
+          <ButtonScroll linkTo="bravoDocumentation">Dokumentasi</ButtonScroll>
         </div>
       </div>
       <div className="bg-secondary text-center flex justify-between">
         <img src={BRAVO} alt="bravo banner" className="hidden sm:block" />
-        <div className="text-center py-20 px-6 lg:px-20">
+        <div className="text-center py-20 px-6 lg:px-20" name="bravoAbout">
           <Text
             variant="h1"
             weight="bold"

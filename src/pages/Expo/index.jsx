@@ -14,7 +14,13 @@ const Expo = () => {
         <title>BEF | Expo</title>
       </Helmet>
       <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
-        <Text variant="h1" weight="bold" color="white" className="text-white">
+        <Text
+          variant="h1"
+          weight="bold"
+          color="white"
+          className="text-white"
+          shadow="text"
+        >
           Master the Era of Globalization with Innovative Business
         </Text>
         <hr className="w-9/12 mx-auto h-0.5	 rounded bg-white my-5" />
@@ -68,7 +74,7 @@ const Expo = () => {
           meningkatkan kemajuan ekonomi Indonesia.
         </Text>
       </div>
-      <MedPart content={<SectionTwo/>}/>
+      <MedPart content={<SectionTwo />} />
     </AnimateDiv>
   );
 };

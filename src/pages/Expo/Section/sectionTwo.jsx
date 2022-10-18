@@ -24,6 +24,7 @@ const sectionTwo = () => {
           weight="semiBold"
           color="white"
           className="text-white"
+          shadow="text"
         >
           Manfaat Kegiatan
         </Text>

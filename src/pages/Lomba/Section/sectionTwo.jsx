@@ -13,6 +13,7 @@ const sectionTwo = () => {
           weight="semiBold"
           color="white"
           className="text-white"
+          shadow="text"
         >
           Dokumentasi Bravo 2022
         </Text>

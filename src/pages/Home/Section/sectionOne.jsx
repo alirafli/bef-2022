@@ -13,6 +13,7 @@ const sectionOne = ({ MASCOT, Text }) => {
           weight="bold"
           color="white"
           className="text-secondary"
+          shadow="text"
         >
           Brawijaya Entrepreneur Festival 2022
         </Text>

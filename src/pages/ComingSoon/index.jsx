@@ -14,6 +14,7 @@ const ComingSoon = () => {
           weight="bold"
           variant="h1"
           className="text-white mt-10"
+          shadow="text"
         >
           Coming Soon!
         </Text>

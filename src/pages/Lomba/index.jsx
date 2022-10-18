@@ -11,7 +11,13 @@ const Lomba = () => {
         <title>BEF | Lomba</title>
       </Helmet>
       <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
-        <Text variant="h1" weight="bold" color="white" className="text-white">
+        <Text
+          variant="h1"
+          weight="bold"
+          color="white"
+          className="text-white"
+          shadow="text"
+        >
           Brawijaya Entrepreneurship in Advanced Competition (BRAVO)
         </Text>
         <hr className="w-11/12 mx-auto h-0.5	 rounded bg-white my-5" />

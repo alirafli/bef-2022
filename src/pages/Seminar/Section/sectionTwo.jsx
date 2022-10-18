@@ -61,6 +61,7 @@ const sectionTwo = () => {
             weight="semiBold"
             color="white"
             className="text-white"
+            shadow="text"
           >
             Seminar Day 1
           </Text>
@@ -83,6 +84,7 @@ const sectionTwo = () => {
             weight="semiBold"
             color="white"
             className="text-white"
+            shadow="text"
           >
             Seminar Day 2
           </Text>

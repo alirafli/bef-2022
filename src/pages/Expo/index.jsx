@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
-import { Text, Button, MedPart, AnimateDiv } from "../../components";
+import { Text, HrefButton, MedPart, AnimateDiv } from "../../components";
 import { Helmet } from "react-helmet-async";
 
 const Expo = () => {
@@ -46,7 +46,7 @@ const Expo = () => {
           </div>
         </div>
         <div>
-          <Button>Contact Person</Button>
+          <HrefButton href="https://wa.me/+6287810268345">Contact Person</HrefButton>
         </div>
       </div>
       <div className="bg-secondary text-center py-20 px-5 md:px-52 mb-20">

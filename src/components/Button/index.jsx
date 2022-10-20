@@ -87,3 +87,26 @@ export const ButtonScroll = ({
     </LinkScroll>
   );
 };
+
+export const HrefButton = ({
+  href,
+  onClick,
+  type,
+  className,
+  variant = "primary",
+  children = "See More",
+}) => {
+  return (
+    <a href={href}>
+      <button
+        className={classNames(STYLE, VARIANT[variant], className)}
+        onClick={onClick}
+        type={type}
+      >
+        <Text variant="p2" color="white" className="text-white">
+          {children}
+        </Text>
+      </button>
+    </a>
+  );
+};

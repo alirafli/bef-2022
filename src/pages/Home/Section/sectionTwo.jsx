@@ -1,8 +1,10 @@
 import React from "react";
+import { AnimateSubDiv, Text } from "../../../components";
+import HAND from "../../../assets/homepage/hand.png";
 
-const sectionTwo = ({ Text, HAND }) => {
+const sectionTwo = () => {
   return (
-    <div className="relative flex flex-col items-center mx-auto text-center overflow-hidden pb-24">
+    <AnimateSubDiv className="relative flex flex-col items-center mx-auto text-center overflow-hidden pb-24">
       <div>
         <Text variant="h1" weight="bold" className="mb-3">
           Throwback
@@ -32,7 +34,7 @@ const sectionTwo = ({ Text, HAND }) => {
         alt="hand right"
         className="absolute w-[300px] md:w-[400px] lg:w-[500px] -right-44 top-[80px] -scale-x-100 -z-10"
       />
-    </div>
+    </AnimateSubDiv>
   );
 };
 

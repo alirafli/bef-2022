@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimateDiv = ({ children, className }) => {
+export const AnimateDiv = ({ children, className }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,4 +18,20 @@ const AnimateDiv = ({ children, className }) => {
   );
 };
 
-export default AnimateDiv;
+export const AnimateSubDiv = ({ children, className }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{
+        type: "spring",
+        bounce: 0.4,
+        duration: 1.5,
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+};

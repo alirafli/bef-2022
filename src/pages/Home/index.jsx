@@ -1,8 +1,5 @@
 import React from "react";
-import { MedPart, Text, Button, AnimateDiv } from "../../components";
-import HAND from "../../assets/homepage/hand.png";
-import MASCOT from "../../assets/mascot.png";
-
+import { MedPart, AnimateDiv } from "../../components";
 import SectionOne from "./Section/sectionOne";
 import SectionTwo from "./Section/sectionTwo";
 import SectionThree from "./Section/sectionThree";
@@ -17,12 +14,12 @@ const Home = () => {
       <Helmet>
         <title>BEF | Homepage</title>
       </Helmet>
-      <SectionOne Button={Button} Text={Text} MASCOT={MASCOT} />
-      <SectionTwo Text={Text} HAND={HAND} />
-      <SectionThree Text={Text} />
-      <SectionFour Text={Text} />
-      <SectionFive Text={Text} />
-      <MedPart content={<SectionSix Text={Text} />} />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <MedPart content={<SectionSix />} />
     </AnimateDiv>
   );
 };

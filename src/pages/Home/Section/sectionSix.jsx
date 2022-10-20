@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Text, AnimateSubDiv } from "../../../components";
 import PEOPLE1 from "../../../assets/homepage/people1.png";
 import PEOPLE2 from "../../../assets/homepage/people2.png";
 import PEOPLE3 from "../../../assets/homepage/people3.png";
@@ -38,7 +39,7 @@ function SlickArrowLeft({ currentSlide, slideCount, style, ...props }) {
   );
 }
 
-const sectionSix = ({ Text }) => {
+const sectionSix = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -100,7 +101,7 @@ const sectionSix = ({ Text }) => {
     },
   ];
   return (
-    <div className="flex flex-col items-center mx-auto text-center my-28">
+    <AnimateSubDiv className="flex flex-col items-center mx-auto text-center my-28">
       <Text variant="h1" weight="bold">
         Insight
       </Text>
@@ -140,7 +141,7 @@ const sectionSix = ({ Text }) => {
           })}
         </Slider>
       </div>
-    </div>
+    </AnimateSubDiv>
   );
 };
 

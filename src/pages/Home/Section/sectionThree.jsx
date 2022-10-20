@@ -4,8 +4,8 @@ import EXPO from "../../../assets/homepage/expo.png";
 import COMPETITION from "../../../assets/homepage/competition.png";
 import CATALOG from "../../../assets/homepage/catalog.png";
 import MAP from "../../../assets/homepage/map.png";
-import { MenuWidget } from "../../../components";
-const sectionThree = ({ Text }) => {
+import { MenuWidget, Text } from "../../../components";
+const sectionThree = () => {
   return (
     <div
       className="bg-whatsOn-bg h-fit lg:h-[800px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8 px-3 place-content-center overflow-hidden"

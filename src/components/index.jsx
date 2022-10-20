@@ -4,8 +4,7 @@ import Navbar from "./Navbar";
 import MedPart from "./MedPart";
 import MenuWidget from "./MenuWidget";
 import Card from "./Card";
-import AnimateDiv from "./CustomDiv";
-
+import {AnimateDiv, AnimateSubDiv}  from "./CustomDiv"
 export {
   Text,
   Button,
@@ -15,5 +14,6 @@ export {
   Card,
   ButtonScroll,
   AnimateDiv,
+  AnimateSubDiv,
   HrefButton
 };

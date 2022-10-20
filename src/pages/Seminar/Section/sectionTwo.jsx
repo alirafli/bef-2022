@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, Card } from "../../../components";
+import { motion } from "framer-motion";
 
 const sectionTwo = () => {
   const seminarDay1 = [
@@ -68,12 +69,23 @@ const sectionTwo = () => {
         </div>
         {seminarDay1.map((data, key) => {
           return (
-            <Card
-              title={data.title}
-              description={data.description}
-              key={key}
-              flip={key % 2 === 1 ? "flip" : "normal"}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -300 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              }}
+            >
+              <Card
+                title={data.title}
+                description={data.description}
+                key={key}
+                flip={key % 2 === 1 ? "flip" : "normal"}
+              />
+            </motion.div>
           );
         })}
       </div>
@@ -91,12 +103,23 @@ const sectionTwo = () => {
         </div>
         {seminarDay2.map((data, key) => {
           return (
-            <Card
-              title={data.title}
-              description={data.description}
-              key={key}
-              flip={key % 2 === 1 ? "flip" : "normal"}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -300 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              }}
+            >
+              <Card
+                title={data.title}
+                description={data.description}
+                key={key}
+                flip={key % 2 === 1 ? "flip" : "normal"}
+              />
+            </motion.div>
           );
         })}
       </div>

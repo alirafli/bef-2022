@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import ArrowRight from "../../../assets/homepage/arrow_right.svg";
 import ArrowLeft from "../../../assets/homepage/arrow_left.svg";
+import { Text, AnimateSubDiv } from "../../../components";
 
 function SlickArrowRight({ currentSlide, slideCount, style, ...props }) {
   return (
@@ -37,7 +38,7 @@ function SlickArrowLeft({ currentSlide, slideCount, style, ...props }) {
   );
 }
 
-const sectionFive = ({ Text }) => {
+const sectionFive = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -97,7 +98,7 @@ const sectionFive = ({ Text }) => {
     },
   ];
   return (
-    <div className="bg-faq-bg text-center flex flex-col justify-center md:h-30rem lg:h-[803px] bg-cover bg-no-repeat lg:bg-center pt-20 sm:pt-32 lg:pt-0">
+    <AnimateSubDiv className="bg-faq-bg text-center flex flex-col justify-center md:h-30rem lg:h-[803px] bg-cover bg-no-repeat lg:bg-center pt-20 sm:pt-32 lg:pt-0">
       <Text
         variant="h1"
         weight="bold"
@@ -132,7 +133,7 @@ const sectionFive = ({ Text }) => {
           })}
         </Slider>
       </div>
-    </div>
+    </AnimateSubDiv>
   );
 };
 

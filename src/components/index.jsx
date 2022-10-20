@@ -1,5 +1,5 @@
 import Text from "./Text";
-import { Button, ButtonScroll } from "./Button";
+import { Button, ButtonScroll, HrefButton } from "./Button";
 import Navbar from "./Navbar";
 import MedPart from "./MedPart";
 import MenuWidget from "./MenuWidget";
@@ -15,4 +15,5 @@ export {
   Card,
   ButtonScroll,
   AnimateDiv,
+  HrefButton
 };

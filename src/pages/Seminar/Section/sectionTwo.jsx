@@ -70,7 +70,7 @@ const sectionTwo = () => {
         {seminarDay1.map((data, key) => {
           return (
             <motion.div
-              initial={{ opacity: 0, x: -300 }}
+              initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{
@@ -78,11 +78,11 @@ const sectionTwo = () => {
                 bounce: 0.4,
                 duration: 0.8,
               }}
+              key={key}
             >
               <Card
                 title={data.title}
                 description={data.description}
-                key={key}
                 flip={key % 2 === 1 ? "flip" : "normal"}
               />
             </motion.div>
@@ -104,7 +104,7 @@ const sectionTwo = () => {
         {seminarDay2.map((data, key) => {
           return (
             <motion.div
-              initial={{ opacity: 0, x: -300 }}
+              initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{
@@ -112,11 +112,11 @@ const sectionTwo = () => {
                 bounce: 0.4,
                 duration: 0.8,
               }}
+              key={key}
             >
               <Card
                 title={data.title}
                 description={data.description}
-                key={key}
                 flip={key % 2 === 1 ? "flip" : "normal"}
               />
             </motion.div>

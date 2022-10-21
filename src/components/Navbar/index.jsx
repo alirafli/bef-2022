@@ -1,19 +1,44 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  Outlet,
+  useMatch,
+  useResolvedPath,
+} from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../../assets/logo/logo-mw2.svg";
+import logo from "../../assets/logo/logo-bef.svg";
+import classNames from "classnames";
 
 const navigation = [
-  { name: "Home", href: "https://mw.ub.ac.id/" },
-  { name: "Tentang", href: "https://mw.ub.ac.id/tentang/" },
-  { name: "MW INFO", href: "https://mw.ub.ac.id/category/berita/" },
-  {
-    name: "Data Pengurus dan Alumni",
-    href: "https://mw.ub.ac.id/data-pengurus/",
-  },
-  { name: "Contact", href: "https://mw.ub.ac.id/contact-2/" },
+  { name: "Home", href: "/" },
+  { name: "Seminar", href: "/seminar" },
+  { name: "Expo", href: "/expo" },
+  { name: "Competition", href: "/competition" },
+  { name: "Catalog", href: "/coming-soon" },
 ];
+
+function CustomLink({ children, to, className, addStyle, ...props }) {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+    <div>
+      <Link
+        className={classNames(
+          match ? "text-orange-600" : "text-zinc-600 hover:text-orange-400",
+          "px-3 py-2 rounded-md text-sm font-medium",
+          addStyle
+        )}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+    </div>
+  );
+}
 
 const Navbar = () => {
   return (
@@ -36,33 +61,20 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                   <div className="flex flex-shrink-0 items-center">
-                    <NavLink to="/">
-                      <img
-                        className="block h-8 w-auto lg:hidden"
-                        src={logo}
-                        alt="Your Company"
-                      />
-                    </NavLink>
-                    <NavLink to="/">
-                      <img
-                        className="hidden h-10 w-auto lg:block"
-                        src={logo}
-                        alt="Your Company"
-                      />
-                    </NavLink>
+                    <Link to="/">
+                      <img className="h-8 w-auto" src={logo} alt="BEF 2022" />
+                    </Link>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <a
+                        <CustomLink
                           key={item.name}
-                          href={item.href}
-                          smooth="true"
-                          duration={500}
-                          className="text-zinc-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium"
+                          to={item.href}
+                          addStyle="px-3 py-2 rounded-md text-sm font-medium"
                         >
                           {item.name}
-                        </a>
+                        </CustomLink>
                       ))}
                     </div>
                   </div>
@@ -71,16 +83,15 @@ const Navbar = () => {
             </div>
 
             <Disclosure.Panel className="sm:hidden">
-              <div className="space-y-1 px-2 pt-2 pb-3">
+              <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
-                  <a
+                  <CustomLink
                     key={item.name}
-                    href={item.href}
-                    className="text-zinc-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium"
-                    aria-current={item.current ? "page" : undefined}
+                    to={item.href}
+                    addStyle="block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.name}
-                  </a>
+                  </CustomLink>
                 ))}
               </div>
             </Disclosure.Panel>

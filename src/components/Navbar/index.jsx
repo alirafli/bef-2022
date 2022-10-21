@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Link,
-  NavLink,
-  Outlet,
-  useMatch,
-  useResolvedPath,
-} from "react-router-dom";
+import { Link, Outlet, useMatch, useResolvedPath } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../../assets/logo/logo-bef.svg";

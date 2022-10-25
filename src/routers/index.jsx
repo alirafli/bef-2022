@@ -9,6 +9,7 @@ import { Navbar } from "../components";
 import Lomba from "../pages/Lomba";
 import NotFound from "../pages/NotFound";
 import ComingSoonRoute from "./ComingSoonRoute";
+import About from "../pages/About";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -33,7 +34,8 @@ const Routers = () => {
           <Route element={<Navbar />}>
             <Route path="/" element={<Home />} />
             <Route path="/competition" element={<Lomba />} />
-            <Route path="/Expo" element={<Expo />} />
+            <Route path="/expo" element={<Expo />} />
+            <Route path="/about" element={<About />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

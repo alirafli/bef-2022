@@ -21,11 +21,7 @@ const sectionThree = () => {
       </Text>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 w-fit mx-auto mt-7">
-        <MenuWidget
-          text="Seminar"
-          image={SEMINAR}
-          alt="seminar"
-        />
+        <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" />
         <MenuWidget text="Expo" image={EXPO} alt="expo" to="/expo" />
         <MenuWidget
           text="Competition"
@@ -33,13 +29,13 @@ const sectionThree = () => {
           alt="competition"
           to="/competition"
         />
-        <MenuWidget text="About Us" image={CATALOG} alt="About Us" />
         <MenuWidget
-          text="Live Streaming"
-          image={LIVE}
-          alt="Live Streaming"
-          
+          text="About Us"
+          image={CATALOG}
+          alt="About Us"
+          to="/about"
         />
+        <MenuWidget text="Live Streaming" image={LIVE} alt="Live Streaming" />
       </div>
     </div>
   );

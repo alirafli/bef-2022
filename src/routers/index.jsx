@@ -7,6 +7,8 @@ import Seminar from "../pages/Seminar";
 import Expo from "../pages/Expo";
 import { Navbar } from "../components";
 import Lomba from "../pages/Lomba";
+import NotFound from "../pages/NotFound"
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -31,6 +33,7 @@ const Routers = () => {
             <Route path="/competition" element={<Lomba />} />
             <Route path="/Expo" element={<Expo />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

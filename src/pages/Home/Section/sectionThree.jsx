@@ -3,7 +3,7 @@ import SEMINAR from "../../../assets/homepage/seminar.png";
 import EXPO from "../../../assets/homepage/expo.png";
 import COMPETITION from "../../../assets/homepage/competition.png";
 import CATALOG from "../../../assets/homepage/catalog.png";
-import MAP from "../../../assets/homepage/map.png";
+import LIVE from "../../../assets/homepage/live.svg";
 import { MenuWidget, Text } from "../../../components";
 const sectionThree = () => {
   return (
@@ -36,7 +36,7 @@ const sectionThree = () => {
         <MenuWidget text="About Us" image={CATALOG} alt="About Us" />
         <MenuWidget
           text="Live Streaming"
-          image={MAP}
+          image={LIVE}
           alt="Live Streaming"
           
         />

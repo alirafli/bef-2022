@@ -25,7 +25,6 @@ const sectionThree = () => {
           text="Seminar"
           image={SEMINAR}
           alt="seminar"
-          to="/seminar"
         />
         <MenuWidget text="Expo" image={EXPO} alt="expo" to="/expo" />
         <MenuWidget
@@ -34,12 +33,12 @@ const sectionThree = () => {
           alt="competition"
           to="/competition"
         />
-        <MenuWidget text="Catalog" image={CATALOG} alt="catalog" />
+        <MenuWidget text="About Us" image={CATALOG} alt="About Us" />
         <MenuWidget
-          text="MAP"
+          text="Live Streaming"
           image={MAP}
-          alt="map"
-          useATag="https://www.google.com/maps/place/Gedung+UKM+Universitas+Brawijaya/@-7.95151,112.61492,15z/data=!4m5!3m4!1s0x0:0x7f4cb40ed0065eca!8m2!3d-7.9520671!4d112.6163289?hl=id"
+          alt="Live Streaming"
+          
         />
       </div>
     </div>

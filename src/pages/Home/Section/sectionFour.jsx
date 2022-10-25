@@ -73,7 +73,7 @@ const sectionFour = () => {
             <img src={DOT} alt="image1" />
           </div>
           <Button isLink="/competition" />
-          <Button isLink="/seminar" />
+          <Button isLink="/coming-soon" />
           <Button isLink="/expo"/>
         </Chrono>
       </div>

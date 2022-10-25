@@ -7,8 +7,8 @@ import Seminar from "../pages/Seminar";
 import Expo from "../pages/Expo";
 import { Navbar } from "../components";
 import Lomba from "../pages/Lomba";
-import NotFound from "../pages/NotFound"
-
+import NotFound from "../pages/NotFound";
+import ComingSoonRoute from "./ComingSoonRoute";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -26,10 +26,12 @@ const Routers = () => {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
+          <Route element={<ComingSoonRoute />}>
+            <Route path="/seminar" element={<Seminar />} />
+          </Route>
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route element={<Navbar />}>
             <Route path="/" element={<Home />} />
-            <Route path="/seminar" element={<Seminar />} />
             <Route path="/competition" element={<Lomba />} />
             <Route path="/Expo" element={<Expo />} />
           </Route>

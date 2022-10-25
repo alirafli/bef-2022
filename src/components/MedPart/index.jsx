@@ -45,24 +45,24 @@ const MedPart = ({ content }) => {
         className="absolute z-10 bottom-[57rem] lg:bottom-[70rem] sm:right-96 scale-75 lg:scale-100"
       />
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-7 relative bg-secondary bg-opacity-75  w-10/12 mx-auto rounded-3xl p-14 md:p-14 z-20">
-        <img src={SEPUTARLMB} alt="seputar lomba" className="mx-auto" />
-        <img src={LOMBAMHS} alt="Lomba Mahasiswa" className="mx-auto" />
-        <img src={RNB} alt="RnB" className="mx-auto" />
-        <img src={ACARAJTM} alt="Acara Jatim" className="mx-auto" />
-        <img src={EJT} alt="Event Jawa Timur" className="mx-auto" />
-        <img src={OPCIT} alt="Optimasi Cinta" className="mx-auto" />
-        <img src={AM} alt="Acara Mahasiswa" className="mx-auto" />
-        <img src={UIN} alt="UIN Maliki Storu" className="mx-auto" />
-        <img src={BEMVOKASI} alt="BEM Vokasi" className="mx-auto" />
-        <img src={MHLGLM} alt="Mahasiswa Ngalam" className="mx-auto" />
-        <img src={WS} alt="Web Seminar" className="mx-auto" />
-        <img src={KANAL24} alt="Kanal 24" className="mx-auto" />
-        <img src={INFOSMNR} alt="Info Seminar" className="mx-auto" />
-        <img src={UBTV} alt="UB TV" className="mx-auto" />
-        <img src={UBRADIO} alt="UB Radio" className="mx-auto" />
-        <img src={POLSET} alt="Polinema Story" className="mx-auto" />
-        <img src={LOMBAMHS2} alt="Lomba Mahasiswa" className="mx-auto" />
-        <img src={SEMINARCNTR} alt="Seminar Center" className="mx-auto " />
+        <img src={SEPUTARLMB} alt="seputar lomba" className="m-auto" />
+        <img src={LOMBAMHS} alt="Lomba Mahasiswa" className="m-auto" />
+        <img src={RNB} alt="RnB" className="m-auto" />
+        <img src={ACARAJTM} alt="Acara Jatim" className="m-auto" />
+        <img src={EJT} alt="Event Jawa Timur" className="m-auto" />
+        <img src={OPCIT} alt="Optimasi Cinta" className="m-auto" />
+        <img src={AM} alt="Acara Mahasiswa" className="m-auto" />
+        <img src={UIN} alt="UIN Maliki Storu" className="m-auto" />
+        <img src={BEMVOKASI} alt="BEM Vokasi" className="m-auto" />
+        <img src={MHLGLM} alt="Mahasiswa Ngalam" className="m-auto" />
+        <img src={WS} alt="Web Seminar" className="m-auto" />
+        <img src={KANAL24} alt="Kanal 24" className="m-auto" />
+        <img src={INFOSMNR} alt="Info Seminar" className="m-auto" />
+        <img src={UBTV} alt="UB TV" className="m-auto" />
+        <img src={UBRADIO} alt="UB Radio" className="m-auto" />
+        <img src={POLSET} alt="Polinema Story" className="m-auto" />
+        <img src={LOMBAMHS2} alt="Lomba Mahasiswa" className="m-auto" />
+        <img src={SEMINARCNTR} alt="Seminar Center" className="m-auto" />
         <img
           src={SEPUTARINFO}
           alt="Seputar"

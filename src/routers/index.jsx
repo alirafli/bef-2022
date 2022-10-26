@@ -30,6 +30,7 @@ const Routers = () => {
         <Routes>
           <Route element={<ComingSoonRoute />}>
             <Route path="/seminar" element={<Seminar />} />
+            <Route path="/live" element={<Live />} />
           </Route>
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route element={<Navbar />}>
@@ -37,7 +38,6 @@ const Routers = () => {
             <Route path="/competition" element={<Lomba />} />
             <Route path="/expo" element={<Expo />} />
             <Route path="/about" element={<About />} />
-            <Route path="/live" element={<Live />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

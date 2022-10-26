@@ -38,23 +38,23 @@ const SectionTwo = () => {
     {
       content:
         "Kuning melambangkan kepribadian entrepreneur yang memiliki jiwa optimis dan sebagai penyemangat serta pemimpin bagi sekitarnya untuk mencapai kesuksesan",
-      background: "#F9D168",
+      background: "F9D168",
       text: "text-black",
     },
     {
       content:
         "Briu melambangkan kepercayaan diri dan tanggung jawab yang tinggi merupakan hal yang harus mengarli di setiap daerah entrepreneur",
-      background: "#09102E",
+      background: "09102E",
     },
     {
       content:
         "Jingga melambangkan entrepreneur yang memiliki kreativitas tinggi dan penuh inspirasi melakukan perubahan",
-      background: "#EB623C",
+      background: "EB623C",
     },
     {
       content:
         "Hijau membangun konsentrasi yang menjadikan entrepreneur percaya dalam setiap langkah perubahan yang lebih baik",
-      background: "#56BDB1",
+      background: "56BDB1",
       text: "text-black",
     },
   ];

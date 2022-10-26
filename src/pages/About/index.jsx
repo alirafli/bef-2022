@@ -9,7 +9,7 @@ const About = () => {
   return (
     <AnimateDiv className="pt-16 overflow-hidden">
       <Helmet>
-        <title>BEF | About</title>
+        <title>BEF | About Us</title>
       </Helmet>
       <div className="bg-bef-bg h-[500px] sm:h-[450px]  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
         <Text

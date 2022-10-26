@@ -10,7 +10,8 @@ const navigation = [
   { name: "Seminar", href: "/seminar" },
   { name: "Expo", href: "/expo" },
   { name: "Competition", href: "/competition" },
-  { name: "About", href: "/about" },
+  { name: "Live", href: "/live" },
+  { name: "About Us", href: "/about" },
 ];
 
 function CustomLink({ children, to, className, addStyle, ...props }) {

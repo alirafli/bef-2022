@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 const Live = () => {
   return (
     <AnimateDiv>
+    {/* not gonna use this page */}
       <Helmet>
         <title>BEF | Coming Soon</title>
       </Helmet>

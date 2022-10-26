@@ -40,7 +40,6 @@ const sectionThree = () => {
           text="Live Streaming"
           image={LIVE}
           alt="Live Streaming"
-          to="/live"
         />
       </div>
     </div>

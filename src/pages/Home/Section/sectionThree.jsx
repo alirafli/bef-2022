@@ -25,7 +25,7 @@ const sectionThree = () => {
           text="About Us"
           image={CATALOG}
           alt="About Us"
-          to="/about"
+          to="/about-us"
         />
         <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" />
         <MenuWidget text="Expo" image={EXPO} alt="expo" to="/expo" />
@@ -40,7 +40,6 @@ const sectionThree = () => {
           text="Live Streaming"
           image={LIVE}
           alt="Live Streaming"
-          to="/live"
         />
       </div>
     </div>

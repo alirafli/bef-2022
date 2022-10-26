@@ -8,7 +8,7 @@ import DIAMONDRIGHT from "../../../assets/homepage/kristal2.png";
 const sectionFour = () => {
   const items = [
     {
-      title: "7 November 2022",
+      title: "6 November 2022",
       cardTitle: "Lomba",
       cardSubtitle:
         "Brawijaya Entrepreneurship in Advanced Competition (BRAVO) is a competition that focuses on finding business innovations that are able to adapt in the current era and have good business sustainability.",

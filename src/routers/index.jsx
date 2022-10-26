@@ -10,6 +10,7 @@ import Lomba from "../pages/Lomba";
 import NotFound from "../pages/NotFound";
 import ComingSoonRoute from "./ComingSoonRoute";
 import About from "../pages/About";
+import Live from "../pages/Live";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -36,6 +37,7 @@ const Routers = () => {
             <Route path="/competition" element={<Lomba />} />
             <Route path="/expo" element={<Expo />} />
             <Route path="/about" element={<About />} />
+            <Route path="/live" element={<Live />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

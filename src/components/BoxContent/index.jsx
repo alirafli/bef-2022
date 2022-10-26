@@ -29,7 +29,7 @@ const BoxContent = ({ data = [], title = "your title", logo, className }) => {
             <div
               className={classNames(
                 "rounded-2xl px-10 py-5 w-full my-9",
-                data.background ? `bg-[#${data.background}]` : "bg-[#393481]"
+                data.background ? `${data.background}` : "bg-[#393481]"
               )}
               key={key}
             >

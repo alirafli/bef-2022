@@ -106,11 +106,11 @@ const sectionSix = () => {
         Insight
       </Text>
       <Text variant="p2">What they say about us?</Text>
-      <div className="w-10/12 lg:w-10/12 mt-14">
+      <div className="relative w-10/12 lg:w-10/12 mt-14 z-20">
         <Slider {...settings}>
           {items.map((data, i) => {
             return (
-              <div className="p-5 bg-secondary rounded-3xl h-[45rem] md:h-[53rem]" key={i}>
+              <div className="p-5 bg-secondary rounded-3xl sm:min-h-[40rem] md:min-h-[54rem] max-h-fit" key={i}>
                 <img
                   src={data.image}
                   alt="people"

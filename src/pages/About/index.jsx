@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import MASCOT from "../../assets/mascot3.png";
 import MASCOT2 from "../../assets/mascot2.png";
 import { Helmet } from "react-helmet-async";
+import SectionTwo from "./Section/SectionTwo";
 
 const About = () => {
   return (
@@ -60,7 +61,7 @@ const About = () => {
           bear itself describes the cold weather of Malang city.
         </Text>
       </div>
-      <MedPart />
+      <MedPart content={<SectionTwo />} />
     </AnimateDiv>
   );
 };

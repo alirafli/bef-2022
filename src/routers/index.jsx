@@ -37,7 +37,7 @@ const Routers = () => {
             <Route path="/" element={<Home />} />
             <Route path="/competition" element={<Lomba />} />
             <Route path="/expo" element={<Expo />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about-us" element={<About />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

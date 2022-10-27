@@ -1,10 +1,13 @@
 import React from "react";
-import { ButtonScroll } from "../../../components";
-const sectionOne = ({ MASCOT, Text }) => {
+import { motion } from "framer-motion";
+import { ButtonScroll, Text } from "../../../components";
+import MASCOT from "../../../assets/mascot.png";
+
+const sectionOne = () => {
   return (
     <div className="flex flex-col md:flex-row bg-bef-down md:h-30rem lg:h-[685px] bg-contain bg-no-repeat lg:bg-cover lg:bg-center mb-8">
       <div className="pt-10 md:pt-0 w-36 md:w-1/4 md:mt-20 mx-auto lg:mt-24">
-        <img src={MASCOT} alt="mascot" />
+        <motion.img whileHover={{ scale: 1.1 }} src={MASCOT} alt="mascot" />
       </div>
       <div className="p-5 md:p0 text-center md:text-left md:w-3/4 h-fit md:mt-12 lg:mt-32">
         <Text
@@ -12,6 +15,7 @@ const sectionOne = ({ MASCOT, Text }) => {
           weight="bold"
           color="white"
           className="text-secondary"
+          shadow="text"
         >
           Brawijaya Entrepreneur Festival 2022
         </Text>
@@ -28,7 +32,7 @@ const sectionOne = ({ MASCOT, Text }) => {
           and actualize the slogan of Brawijaya University, namely World Class
           Entrepreneurial University.
         </Text>
-        <ButtonScroll linkTo="whatsOn"  />
+        <ButtonScroll linkTo="whatsOn" />
       </div>
     </div>
   );

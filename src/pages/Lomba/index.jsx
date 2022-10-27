@@ -1,17 +1,23 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
 import { Helmet } from "react-helmet-async";
-import { ButtonScroll, MedPart, Text } from "../../components";
+import { ButtonScroll, MedPart, Text, AnimateDiv } from "../../components";
 import BRAVO from "../../assets/bravo.svg";
 
 const Lomba = () => {
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Lomba</title>
       </Helmet>
       <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
-        <Text variant="h1" weight="bold" color="white" className="text-white">
+        <Text
+          variant="h1"
+          weight="bold"
+          color="white"
+          className="text-white"
+          shadow="text"
+        >
           Brawijaya Entrepreneurship in Advanced Competition (BRAVO)
         </Text>
         <hr className="w-11/12 mx-auto h-0.5	 rounded bg-white my-5" />
@@ -21,7 +27,7 @@ const Lomba = () => {
           className="text-white my-16"
           weight="semiBold"
         >
-          Nantikan perlombaan di event BEF Tahun Depan!
+          Grand Final 6 November 2022
         </Text>
         <div>
           <ButtonScroll linkTo="bravoAbout">Tentang Bravo</ButtonScroll>
@@ -52,7 +58,7 @@ const Lomba = () => {
         <img src={BRAVO} alt="bravo banner" className="hidden sm:block" />
       </div>
       <MedPart content={<SectionTwo />} />
-    </div>
+    </AnimateDiv>
   );
 };
 

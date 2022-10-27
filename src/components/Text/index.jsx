@@ -8,6 +8,10 @@ const VARIANT = {
   p2: "text-sm md:text-base lg:text-xl",
 };
 
+const SHADOW = {
+  none: "drop-shadow-none",
+  text: "drop-shadow-text",
+};
 const WEIGHT = {
   bold: "font-bold",
   semiBold: "font-semibold",
@@ -23,6 +27,7 @@ const Text = ({
   color = "black",
   variant = "p1",
   weight = "normal",
+  shadow = "none",
   className,
   children,
 }) => {
@@ -32,7 +37,8 @@ const Text = ({
         className,
         VARIANT[variant],
         WEIGHT[weight],
-        COLOR[color]
+        COLOR[color],
+        SHADOW[shadow]
       )}
     >
       {children}

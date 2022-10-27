@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
-import { Text, Button, MedPart } from "../../components";
+import { Text, HrefButton, MedPart, AnimateDiv } from "../../components";
 import { Helmet } from "react-helmet-async";
 
 const Expo = () => {
@@ -9,12 +9,18 @@ const Expo = () => {
     { day: "Day 2", time: "09.00 - 14.00 WIB" },
   ];
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Expo</title>
       </Helmet>
       <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
-        <Text variant="h1" weight="bold" color="white" className="text-white">
+        <Text
+          variant="h1"
+          weight="bold"
+          color="white"
+          className="text-white"
+          shadow="text"
+        >
           Master the Era of Globalization with Innovative Business
         </Text>
         <hr className="w-9/12 mx-auto h-0.5	 rounded bg-white my-5" />
@@ -46,7 +52,7 @@ const Expo = () => {
           </div>
         </div>
         <div>
-          <Button>Contact Person</Button>
+          <HrefButton href="https://wa.me/+6287810268345">Contact Person</HrefButton>
         </div>
       </div>
       <div className="bg-secondary text-center py-20 px-5 md:px-52 mb-20">
@@ -68,8 +74,8 @@ const Expo = () => {
           meningkatkan kemajuan ekonomi Indonesia.
         </Text>
       </div>
-      <MedPart content={<SectionTwo/>}/>
-    </div>
+      <MedPart content={<SectionTwo />} />
+    </AnimateDiv>
   );
 };
 

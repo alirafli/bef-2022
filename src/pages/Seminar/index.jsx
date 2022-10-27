@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
-import { Text, Button, MedPart } from "../../components";
+import { Text, Button, MedPart, AnimateDiv } from "../../components";
 import Countdown from "react-countdown";
 import { Helmet } from "react-helmet-async";
 
@@ -38,12 +38,12 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 const Seminar = () => {
   return (
-    <div className="pt-16">
+    <AnimateDiv className="pt-16">
       <Helmet>
         <title>BEF | Seminar</title>
       </Helmet>
       <div className="bg-bef-bg  lg:h-[685px] bg-no-repeat bg-cover bg-center text-center pt-32 pb-20 px-5 lg:px-72">
-        <Text variant="h1" weight="bold" color="white" className="text-white">
+        <Text variant="h1" weight="bold" color="white" className="text-white" shadow="text">
           Solutive and Innovative Young Entrepreneurs in Society 5.0
         </Text>
         <hr className="w-9/12 mx-auto h-0.5	 rounded bg-white my-5" />
@@ -86,7 +86,7 @@ const Seminar = () => {
         </Text>
       </div>
       <MedPart content={<SectionTwo />} />
-    </div>
+    </AnimateDiv>
   );
 };
 

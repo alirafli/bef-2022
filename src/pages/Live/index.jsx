@@ -2,9 +2,10 @@ import React from "react";
 import { MedPart, Text, Button, AnimateDiv } from "../../components";
 import { Helmet } from "react-helmet-async";
 
-const ComingSoon = () => {
+const Live = () => {
   return (
     <AnimateDiv>
+    {/* not gonna use this page */}
       <Helmet>
         <title>BEF | Coming Soon</title>
       </Helmet>
@@ -16,13 +17,17 @@ const ComingSoon = () => {
           className="text-white mt-10"
           shadow="text"
         >
-          Coming Soon!
+          Seminar Livestream
         </Text>
-          <Button isLink="/" className="mt-24">Kembali ke Halaman Utama</Button>
+        <hr className="w-9/12 mx-auto h-0.5	 rounded bg-white my-5" />
+
+        <Button isLink="/" className="mt-24">
+          Tonton
+        </Button>
       </div>
       <MedPart />
     </AnimateDiv>
   );
 };
 
-export default ComingSoon;
+export default Live;

@@ -1,14 +1,14 @@
 import React from "react";
 import { Chrono } from "react-chrono";
-import { Button } from "../../../components";
+import { Button, Text, AnimateSubDiv } from "../../../components";
 import DOT from "../../../assets/homepage/dot.png";
 import DIAMONDLEFT from "../../../assets/homepage/kristal1.png";
 import DIAMONDRIGHT from "../../../assets/homepage/kristal2.png";
 
-const sectionFour = ({ Text }) => {
+const sectionFour = () => {
   const items = [
     {
-      title: "7 November 2022",
+      title: "6 November 2022",
       cardTitle: "Lomba",
       cardSubtitle:
         "Brawijaya Entrepreneurship in Advanced Competition (BRAVO) is a competition that focuses on finding business innovations that are able to adapt in the current era and have good business sustainability.",
@@ -30,7 +30,7 @@ const sectionFour = ({ Text }) => {
     },
   ];
   return (
-    <div className="relative overflow-hidden">
+    <AnimateSubDiv className="relative overflow-hidden">
       <div className="text-center">
         <Text
           variant="h1"
@@ -73,7 +73,7 @@ const sectionFour = ({ Text }) => {
             <img src={DOT} alt="image1" />
           </div>
           <Button isLink="/competition" />
-          <Button isLink="/seminar" />
+          <Button isLink="/coming-soon" />
           <Button isLink="/expo"/>
         </Chrono>
       </div>
@@ -87,7 +87,7 @@ const sectionFour = ({ Text }) => {
         alt="right diamond"
         className="absolute w-[200px] md:w-[200px] lg:w-[271px] -right-24 top-[600px] -z-10"
       />
-    </div>
+    </AnimateSubDiv>
   );
 };
 

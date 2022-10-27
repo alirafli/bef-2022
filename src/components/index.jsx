@@ -1,9 +1,21 @@
 import Text from "./Text";
-import Button from "./Button";
+import { Button, ButtonScroll, HrefButton } from "./Button";
 import Navbar from "./Navbar";
 import MedPart from "./MedPart";
 import MenuWidget from "./MenuWidget";
 import Card from "./Card";
-import ButtonScroll from "./ButtonScroll";
-
-export { Text, Button, Navbar, MedPart, MenuWidget, Card, ButtonScroll };
+import { AnimateDiv, AnimateSubDiv } from "./CustomDiv";
+import BoxContent from "./BoxContent";
+export {
+  Text,
+  Button,
+  Navbar,
+  MedPart,
+  MenuWidget,
+  Card,
+  ButtonScroll,
+  AnimateDiv,
+  AnimateSubDiv,
+  HrefButton,
+  BoxContent,
+};

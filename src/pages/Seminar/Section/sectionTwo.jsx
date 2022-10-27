@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, Card } from "../../../components";
+import { motion } from "framer-motion";
 
 const sectionTwo = () => {
   const seminarDay1 = [
@@ -61,18 +62,30 @@ const sectionTwo = () => {
             weight="semiBold"
             color="white"
             className="text-white"
+            shadow="text"
           >
             Seminar Day 1
           </Text>
         </div>
         {seminarDay1.map((data, key) => {
           return (
-            <Card
-              title={data.title}
-              description={data.description}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              }}
               key={key}
-              flip={key % 2 === 1 ? "flip" : "normal"}
-            />
+            >
+              <Card
+                title={data.title}
+                description={data.description}
+                flip={key % 2 === 1 ? "flip" : "normal"}
+              />
+            </motion.div>
           );
         })}
       </div>
@@ -83,18 +96,30 @@ const sectionTwo = () => {
             weight="semiBold"
             color="white"
             className="text-white"
+            shadow="text"
           >
             Seminar Day 2
           </Text>
         </div>
         {seminarDay2.map((data, key) => {
           return (
-            <Card
-              title={data.title}
-              description={data.description}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              }}
               key={key}
-              flip={key % 2 === 1 ? "flip" : "normal"}
-            />
+            >
+              <Card
+                title={data.title}
+                description={data.description}
+                flip={key % 2 === 1 ? "flip" : "normal"}
+              />
+            </motion.div>
           );
         })}
       </div>

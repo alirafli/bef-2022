@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Text, AnimateSubDiv } from "../../../components";
 import PEOPLE1 from "../../../assets/homepage/people1.png";
 import PEOPLE2 from "../../../assets/homepage/people2.png";
 import PEOPLE3 from "../../../assets/homepage/people3.png";
@@ -38,7 +39,7 @@ function SlickArrowLeft({ currentSlide, slideCount, style, ...props }) {
   );
 }
 
-const sectionSix = ({ Text }) => {
+const sectionSix = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -100,16 +101,16 @@ const sectionSix = ({ Text }) => {
     },
   ];
   return (
-    <div className="flex flex-col items-center mx-auto text-center my-28">
+    <AnimateSubDiv className="flex flex-col items-center mx-auto text-center my-28">
       <Text variant="h1" weight="bold">
         Insight
       </Text>
       <Text variant="p2">What they say about us?</Text>
-      <div className="w-10/12 lg:w-10/12 mt-14">
+      <div className="relative w-10/12 lg:w-10/12 mt-14 z-20">
         <Slider {...settings}>
           {items.map((data, i) => {
             return (
-              <div className="p-5 bg-secondary rounded-3xl h-[45rem] md:h-[53rem]" key={i}>
+              <div className="p-5 bg-secondary rounded-3xl sm:min-h-[40rem] md:min-h-[54rem] max-h-fit" key={i}>
                 <img
                   src={data.image}
                   alt="people"
@@ -140,7 +141,7 @@ const sectionSix = ({ Text }) => {
           })}
         </Slider>
       </div>
-    </div>
+    </AnimateSubDiv>
   );
 };
 

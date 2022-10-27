@@ -27,7 +27,7 @@ const Lomba = () => {
           className="text-white my-16"
           weight="semiBold"
         >
-          Nantikan perlombaan di event BEF Tahun Depan!
+          Grand Final 6 November 2022
         </Text>
         <div>
           <ButtonScroll linkTo="bravoAbout">Tentang Bravo</ButtonScroll>

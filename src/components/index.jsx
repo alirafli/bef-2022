@@ -3,7 +3,7 @@ import { Button, ButtonScroll, HrefButton } from "./Button";
 import Navbar from "./Navbar";
 import MedPart from "./MedPart";
 import MenuWidget from "./MenuWidget";
-import Card from "./Card";
+import { Card, MultiCard } from "./Card";
 import { AnimateDiv, AnimateSubDiv } from "./CustomDiv";
 import BoxContent from "./BoxContent";
 export {
@@ -18,4 +18,5 @@ export {
   AnimateSubDiv,
   HrefButton,
   BoxContent,
+  MultiCard,
 };

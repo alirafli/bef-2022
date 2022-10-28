@@ -8,37 +8,41 @@ const FLIP = {
   flip: "lg:flex-row-reverse",
 };
 
-const Card = ({
+export const Card = ({
   image = IMAGE,
   name = "pembicara",
   title = "your title",
   description = "description",
   flip = "normal",
+  position = "position",
   className,
 }) => {
   return (
     <div
       className={classNames(
-        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-14 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start",
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-10 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start",
         FLIP[flip],
         className
       )}
     >
-      <div className="text-center lg:w-1/5">
+      <div className="text-center lg:w-2/5">
         <img
           src={image}
           alt="profile"
           className="w-32 lg:w-36 h-32 lg:h-36 rounded-full object-cover mb-4 mx-auto"
         />
+        <Text variant="p2" color="white" className="text-white break-words">
+          {name}
+        </Text>
         <Text
           variant="p2"
           color="white"
           className="text-white break-words mb-5"
         >
-          {name}
+          {position}
         </Text>
       </div>
-      <div className="mx-5 lg:w-4/5">
+      <div className="mx-5 lg:w-3/5">
         <Text
           variant="p1"
           weight="semiBold"
@@ -55,4 +59,60 @@ const Card = ({
   );
 };
 
-export default Card;
+export const MultiCard = ({
+  data = [],
+  image = IMAGE,
+  title = "your title",
+  description = "description",
+  className,
+}) => {
+  return (
+    <div
+      className={classNames(
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-24 my-8 rounded-2xl flex mx-auto flex-col-reverse items-center lg:items-start lg:flex-col-reverse",
+        className
+      )}
+    >
+      <div className="text-center  flex sm:flex-row flex-col w-full justify-center items-center sm:items-start">
+        {data.map((data, key) => {
+          return (
+            <div className="mx-5 mt-10 sm:w-2/6" key={key}>
+              <img
+                src={data.image ? data.image : image}
+                alt="profile"
+                className="w-32 lg:w-36 h-32 lg:h-36 rounded-full object-cover mb-4 mx-auto"
+              />
+              <Text
+                variant="p2"
+                color="white"
+                className="text-white break-words"
+              >
+                {data.name}
+              </Text>
+              <Text
+                variant="p2"
+                color="white"
+                className="text-white break-words mb-5"
+              >
+                {data.position}
+              </Text>
+            </div>
+          );
+        })}
+      </div>
+      <div className="mx-5">
+        <Text
+          variant="p1"
+          weight="semiBold"
+          color="white"
+          className="text-white bg-[#393481] text-center px-5 py-3 rounded-xl mb-5"
+        >
+          {title}
+        </Text>
+        <Text variant="p2" color="white" className="text-white text-justify">
+          {description}
+        </Text>
+      </div>
+    </div>
+  );
+};

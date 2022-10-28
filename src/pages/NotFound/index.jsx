@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Text, AnimateDiv } from "../../components";
 import IMAGE from "../../assets/not_found.svg";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
+  }, [navigate]);
   return (
     <AnimateDiv className="text-center">
       <Helmet>

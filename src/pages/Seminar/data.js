@@ -1,10 +1,12 @@
 import D1PEMBICARA1SESI1 from "../../assets/seminar/canggih.png";
 import D1PEMBICARA2SESI1 from "../../assets/seminar/sutiaji.png";
 import D1PEMBICARA3SESI1 from "../../assets/seminar/eko.png";
-import D1PEMBICARA1SESI2 from "../../assets/seminar/prayogo.png";
+import D2PEMBICARA3SESI1 from "../../assets/seminar/orlando.png";
+// import D1PEMBICARA1SESI2 from "../../assets/seminar/prayogo.png";
 import D2PEMBICARA1SESI1 from "../../assets/seminar/tubagus.png";
 import D2PEMBICARA1SESI2 from "../../assets/seminar/ojk.png";
-import D2PEMBICARA3SESI1 from "../../assets/seminar/reinu.png";
+import D2PEMBICARA3SESI3 from "../../assets/seminar/reinu.png";
+
 export const seminarDay1Sesi1 = {
   title: "Sesi 1 : Malang MSME Development Strategy",
   description:
@@ -30,9 +32,9 @@ export const seminarDay1Sesi1 = {
 
 export const seminarDay1 = [
   {
-    image: D1PEMBICARA1SESI2,
-    name: "Prayogo Danardono",
-    position: "(Owner Lapis Tugu Malang)",
+    image: "",
+    name: "",
+    position: "",
     title:
       "Sesi 2 : How to Maintain Consistency in Business by Building Good Leadership",
     description:
@@ -68,7 +70,7 @@ export const seminarDay2 = [
       "Peserta dan perintis usaha kecil dapat mengetahui kriteria perusahaan yang sesuai untuk dapat menarik investor.",
   },
   {
-    image: D2PEMBICARA3SESI1,
+    image: D2PEMBICARA3SESI3,
     name: "Reinukky Abidharma",
     position: "(Owner Pesen Kopi)",
     title:

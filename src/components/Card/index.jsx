@@ -20,16 +20,22 @@ export const Card = ({
   return (
     <div
       className={classNames(
-        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-10 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start",
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-14 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start",
         FLIP[flip],
         className
       )}
     >
-      <div className="text-center lg:w-2/5">
+      <div
+        className={classNames("text-center", name === "" ? "w-0" : "lg:w-7/12")}
+      >
         <img
           src={image}
           alt="profile"
-          className="w-32 lg:w-36 h-32 lg:h-36 rounded-full object-cover mb-4 mx-auto"
+          className={classNames(
+            name === ""
+              ? "hidden"
+              : "w-32 lg:w-36 h-32 lg:h-36 rounded-full object-cover mb-4 mx-auto"
+          )}
         />
         <Text variant="p2" color="white" className="text-white break-words">
           {name}
@@ -42,7 +48,9 @@ export const Card = ({
           {position}
         </Text>
       </div>
-      <div className="mx-5 lg:w-3/5">
+      <div
+        classNames={classNames("mx-5", name === "" ? "w-full" : "lg:w-5/12")}
+      >
         <Text
           variant="p1"
           weight="semiBold"

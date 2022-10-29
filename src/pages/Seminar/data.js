@@ -65,7 +65,7 @@ export const seminarDay2 = [
     image: D2PEMBICARA1SESI2,
     name: " OJK Malang",
     position: "",
-    title: "Sesi 3 : Criteria for A good Company to Invest In",
+    title: "Sesi 2 : Criteria for A Good Company to Invest In",
     description:
       "Peserta dan perintis usaha kecil dapat mengetahui kriteria perusahaan yang sesuai untuk dapat menarik investor.",
   },
@@ -74,7 +74,7 @@ export const seminarDay2 = [
     name: "Reinukky Abidharma",
     position: "(Owner Pesen Kopi)",
     title:
-      "Sesi 2 : Youngpreneur's Creative Ways of Improving Business in Era 5.0",
+      "Sesi 3 : Youngpreneur's Creative Ways of Improving Business in Era 5.0",
     description:
       "Peserta khususnya mahasiswa dapat mengidentifikasi stategi yang tepat untuk diterapkan dalam bisnisnya agar berkembang.",
   },

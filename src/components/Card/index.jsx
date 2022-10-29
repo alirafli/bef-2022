@@ -20,13 +20,13 @@ export const Card = ({
   return (
     <div
       className={classNames(
-        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-14 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start",
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-14 my-8 rounded-2xl flex mx-auto flex-col items-center lg:items-start justify-center",
         FLIP[flip],
         className
       )}
     >
       <div
-        className={classNames("text-center", name === "" ? "w-0" : "lg:w-7/12")}
+        className={classNames("text-center", name === "" ? "w-0" : "lg:w-6/12")}
       >
         <img
           src={image}
@@ -49,7 +49,7 @@ export const Card = ({
         </Text>
       </div>
       <div
-        classNames={classNames("mx-5", name === "" ? "w-full" : "lg:w-5/12")}
+        classNames={classNames("mx-5", name === "" ? "w-full" : "lg:w-6/12")}
       >
         <Text
           variant="p1"
@@ -77,7 +77,7 @@ export const MultiCard = ({
   return (
     <div
       className={classNames(
-        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-10 my-8 rounded-2xl flex mx-auto flex-col-reverse items-center lg:items-start lg:flex-col-reverse",
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-10 my-8 rounded-2xl flex mx-auto flex-col-reverse items-center lg:items-start lg:flex-col-reverse justify-center",
         className
       )}
     >
@@ -108,7 +108,7 @@ export const MultiCard = ({
           );
         })}
       </div>
-      <div className="mx-5">
+      <div className="mx-auto">
         <Text
           variant="p1"
           weight="semiBold"

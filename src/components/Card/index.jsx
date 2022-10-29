@@ -69,7 +69,7 @@ export const MultiCard = ({
   return (
     <div
       className={classNames(
-        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-24 my-8 rounded-2xl flex mx-auto flex-col-reverse items-center lg:items-start lg:flex-col-reverse",
+        "bg-secondary w-11/12 md:w-10/12 lg:w-8/12 py-11 px-5 md:px-10 my-8 rounded-2xl flex mx-auto flex-col-reverse items-center lg:items-start lg:flex-col-reverse",
         className
       )}
     >

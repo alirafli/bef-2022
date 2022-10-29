@@ -27,7 +27,7 @@ const sectionThree = () => {
           alt="About Us"
           to="/about-us"
         />
-        <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" />
+        <MenuWidget text="Seminar" image={SEMINAR} alt="seminar" to="/seminar" />
         <MenuWidget text="Expo" image={EXPO} alt="expo" to="/expo" />
         <MenuWidget
           text="Competition"

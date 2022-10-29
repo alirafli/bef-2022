@@ -4,31 +4,9 @@ import { Button, Text, AnimateSubDiv } from "../../../components";
 import DOT from "../../../assets/homepage/dot.png";
 import DIAMONDLEFT from "../../../assets/homepage/kristal1.png";
 import DIAMONDRIGHT from "../../../assets/homepage/kristal2.png";
+import { timeline } from "../data";
 
 const sectionFour = () => {
-  const items = [
-    {
-      title: "6 November 2022",
-      cardTitle: "Lomba",
-      cardSubtitle:
-        "Brawijaya Entrepreneurship in Advanced Competition (BRAVO) is a competition that focuses on finding business innovations that are able to adapt in the current era and have good business sustainability.",
-      linkTo: "",
-    },
-    {
-      title: "7-8 November 2022",
-      cardTitle: "Seminar",
-      cardSubtitle:
-        "“Solutive and Innovative Young Entrepreneurs in Society 5.0” is a seminar that focuses on the concept of Society 5.0, business activities carried out using artificial intelligence to help humans create solutions and innovations to improve business performance.",
-      linkTo: "",
-    },
-    {
-      title: "7-8 November 2022",
-      cardTitle: "Expo",
-      cardSubtitle:
-        "“Master the Era of Globalization with Innovative Business” is an expo that is engaged in entrepreneurship, this activity is carried out because increasing global competition makes the millennial generation have to make effort to develop the economy as a whole to improve economic progress in Indonesia.",
-      linkTo: "",
-    },
-  ];
   return (
     <AnimateSubDiv className="relative overflow-hidden">
       <div className="text-center">
@@ -48,7 +26,7 @@ const sectionFour = () => {
 
       <div className="lg:w-7/12 mx-auto mt-5">
         <Chrono
-          items={items}
+          items={timeline}
           mode="VERTICAL"
           theme={{
             primary: "black",
@@ -74,7 +52,7 @@ const sectionFour = () => {
           </div>
           <Button isLink="/competition" />
           <Button isLink="/coming-soon" />
-          <Button isLink="/expo"/>
+          <Button isLink="/expo" />
         </Chrono>
       </div>
       <img

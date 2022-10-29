@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTwo from "./Section/sectionTwo";
-import { Text, Button, MedPart, AnimateDiv } from "../../components";
+import { Text, MedPart, AnimateDiv, HrefButton } from "../../components";
 import Countdown from "react-countdown";
 import { Helmet } from "react-helmet-async";
 
@@ -64,7 +64,7 @@ const Seminar = () => {
           />
         </div>
         <div>
-          <Button>Pesan Tiket</Button>
+          <HrefButton href="https://www.loket.com/event/brawijaya-entrepreneur-festival">Pesan Tiket</HrefButton>
         </div>
       </div>
       <div className="bg-secondary text-center py-20 px-5 md:px-52 mb-20">

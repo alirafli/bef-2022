@@ -27,11 +27,10 @@ const Routers = () => {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route element={<ComingSoonRoute />}>
-            <Route path="/seminar" element={<Seminar />} />
-          </Route>
+          <Route element={<ComingSoonRoute />}></Route>
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route element={<Navbar />}>
+            <Route path="/seminar" element={<Seminar />} />
             <Route path="/" element={<Home />} />
             <Route path="/competition" element={<Lomba />} />
             <Route path="/expo" element={<Expo />} />

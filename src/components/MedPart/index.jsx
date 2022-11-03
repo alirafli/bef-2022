@@ -4,26 +4,9 @@ import MOUNTAIN from "../../assets/homepage/mountain.png";
 import OBJECT1 from "../../assets/medPart/object1.png";
 import OBJECT4 from "../../assets/medPart/object4.png";
 import OBJECT5 from "../../assets/medPart/object5.png";
-import SEPUTARLMB from "../../assets/medPart/value/seputarlombaid.png";
-import LOMBAMHS from "../../assets/medPart/value/lombamahasiswa.png";
-import RNB from "../../assets/medPart/value/rnb.png";
-import ACARAJTM from "../../assets/medPart/value/acarajatim.png";
-import EJT from "../../assets/medPart/value/ejt.png";
-import OPCIT from "../../assets/medPart/value/optimasicinta.png";
-import AM from "../../assets/medPart/value/am.png";
-import UIN from "../../assets/medPart/value/uin.png";
-import BEMVOKASI from "../../assets/medPart/value/bemvokasi.png";
-import MHLGLM from "../../assets/medPart/value/mhlglm.png";
-import WS from "../../assets/medPart/value/ws.png";
-import KANAL24 from "../../assets/medPart/value/kanal24.png";
-import INFOSMNR from "../../assets/medPart/value/seminarinfo.png";
-import UBTV from "../../assets/medPart/value/ubtv.png";
-import UBRADIO from "../../assets/medPart/value/ubradio.png";
-import POLSET from "../../assets/medPart/value/polinema.png";
-import LOMBAMHS2 from "../../assets/medPart/value/lombamahasiswa2.png";
-import SEMINARCNTR from "../../assets/medPart/value/sc.png";
-import SEPUTARINFO from "../../assets/medPart/value/si.png";
-import BFAST from "../../assets/medPart/value/bfast.png";
+import { mediaPartner, sponsor } from "./data";
+import classNames from "classnames";
+import Text from "../Text";
 
 const MedPart = ({ content }) => {
   return (
@@ -36,43 +19,57 @@ const MedPart = ({ content }) => {
       />
       <img
         src={OBJECT5}
-        alt="object1"
+        alt="object2"
         className="absolute z-10 bottom-[25rem] lg:bottom-[43rem] -left-32 sm:-left-20 scale-75 lg:scale-100"
       />
       <img
         src={OBJECT4}
-        alt="object1"
+        alt="object3"
         className="absolute z-10 bottom-[57rem] lg:bottom-[70rem] sm:right-96 scale-75 lg:scale-100"
       />
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-7 relative bg-secondary bg-opacity-75  w-10/12 mx-auto rounded-3xl p-14 md:p-14 z-20">
-        <img src={SEPUTARLMB} alt="seputar lomba" className="m-auto" />
-        <img src={LOMBAMHS} alt="Lomba Mahasiswa" className="m-auto" />
-        <img src={RNB} alt="RnB" className="m-auto" />
-        <img src={ACARAJTM} alt="Acara Jatim" className="m-auto" />
-        <img src={EJT} alt="Event Jawa Timur" className="m-auto" />
-        <img src={OPCIT} alt="Optimasi Cinta" className="m-auto" />
-        <img src={AM} alt="Acara Mahasiswa" className="m-auto" />
-        <img src={UIN} alt="UIN Maliki Storu" className="m-auto" />
-        <img src={BEMVOKASI} alt="BEM Vokasi" className="m-auto" />
-        <img src={MHLGLM} alt="Mahasiswa Ngalam" className="m-auto" />
-        <img src={WS} alt="Web Seminar" className="m-auto" />
-        <img src={KANAL24} alt="Kanal 24" className="m-auto" />
-        <img src={INFOSMNR} alt="Info Seminar" className="m-auto" />
-        <img src={UBTV} alt="UB TV" className="m-auto" />
-        <img src={UBRADIO} alt="UB Radio" className="m-auto" />
-        <img src={POLSET} alt="Polinema Story" className="m-auto" />
-        <img src={LOMBAMHS2} alt="Lomba Mahasiswa" className="m-auto" />
-        <img src={SEMINARCNTR} alt="Seminar Center" className="m-auto" />
-        <img
-          src={SEPUTARINFO}
-          alt="Seputar"
-          className="mx-auto col-span-1 lg:col-span-3"
-        />
-        <img
-          src={BFAST}
-          alt="B-Fast"
-          className="mx-auto col-span-1 lg:col-span-3"
-        />
+      <div className="relative bg-secondary bg-opacity-75  w-10/12 mx-auto rounded-3xl p-9 md:p-14 z-20 mb-20">
+        <Text
+          className="mx-auto w-fit text-white mb-8"
+          color="white"
+          variant="h2"
+          weight="semiBold"
+        >
+          Sponsor
+        </Text>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-5 sm:gap-7 ">
+          {sponsor.map((data, i) => {
+            return (
+              <img
+                src={data.image}
+                alt={data.alt}
+                className={classNames("m-auto", data.className)}
+                key={i}
+              />
+            );
+          })}
+        </div>
+      </div>
+      <div className="relative bg-secondary bg-opacity-75  w-10/12 mx-auto rounded-3xl p-9 md:p-14 z-20">
+        <Text
+          className="mx-auto w-fit text-white mb-8"
+          color="white"
+          variant="h2"
+          weight="semiBold"
+        >
+          Media Partner
+        </Text>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-7 ">
+          {mediaPartner.map((data, i) => {
+            return (
+              <img
+                src={data.image}
+                alt={data.alt}
+                className={classNames("m-auto", data.className)}
+                key={i}
+              />
+            );
+          })}
+        </div>
       </div>
       <img
         src={MOUNTAIN}

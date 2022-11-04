@@ -60,7 +60,11 @@ export const mediaPartner = [
 ];
 
 export const sponsor = [
-  { image: APBS, alt: "APBS", className: "mx-auto col-span-1 lg:col-span-3 scale-75" },
+  {
+    image: APBS,
+    alt: "APBS",
+    className: "mx-auto col-span-1 lg:col-span-3 scale-80 lg:scale-75 lg:ml-20",
+  },
   {
     image: undefined,
     alt: "",
@@ -69,7 +73,7 @@ export const sponsor = [
   {
     image: CHICKIN,
     alt: "Chickin",
-    className: "mx-auto col-span-1 lg:col-span-3 scale-75",
+    className: "mx-auto col-span-1 lg:col-span-3 scale-75 lg:scale-90 lg:pr-44",
   },
   { image: TELKOM, alt: "Telkom Indonesia", className: "" },
   { image: NUTRIHUB, alt: "Nutrihub Malang", className: "" },
@@ -81,7 +85,7 @@ export const sponsor = [
   { image: DECHICKEN, alt: "De Chicken", className: "" },
   { image: ISOIRESIK, alt: "Osioresik Cleaning", className: "" },
   { image: EMINA, alt: "Emina", className: "" },
-  { image: BARAKAHAYYU, alt: "Baraka & Hayyu", className: "" },
+  { image: BARAKAHAYYU, alt: "Baraka & Hayyu", className: "scale-75" },
   { image: SGROUP, alt: "Secret Group", className: "" },
   { image: KAMERAMALANG, alt: "Kamera Malang", className: "" },
   { image: SUSU, alt: "Frisian Flag", className: "" },

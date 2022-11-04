@@ -19,7 +19,7 @@ const sectionTwo = () => {
         <iframe
           width="91%"
           height="91%"
-          src="https://www.youtube-nocookie.com/embed/Pa87GE8V_qI?controls=0"
+          src="https://www.youtube.com/embed/8qbxwucjSdI"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />

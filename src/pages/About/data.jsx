@@ -24,7 +24,7 @@ export const misi = [
   },
   {
     content:
-      "Mewadahi usaha mahasiswa untuk ditunjukkan dalam kegiatan pameran wirausaha ((expo)",
+      "Mewadahi usaha mahasiswa untuk ditunjukkan dalam kegiatan pameran wirausaha (expo)",
   },
   {
     content:

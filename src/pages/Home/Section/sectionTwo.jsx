@@ -7,12 +7,11 @@ const sectionTwo = () => {
     <AnimateSubDiv className="relative flex flex-col items-center mx-auto text-center overflow-hidden pb-24">
       <div>
         <Text variant="h1" weight="bold" className="mb-3">
-          Throwback
+          Official Short Movie
         </Text>
         <Text variant="p2" className="w-9/12 lg:w-7/12 mx-auto mb-5">
-          Here, we are delighted to display a glimpse into the exhilaration of
-          BEF back from 2019 until 2021 that hopefully will allow feelings of
-          nostalgia inside you to spark
+          Here, we are delighted to present our official short movie, the
+          glimpse of how a man chases his dream with BEF.
         </Text>
       </div>
       <div className="w-10/12 md:w-8/12 lg:w-5/12 rounded-2xl h-56 md:h-96 bg-youtube-bg flex items-center justify-center bg-no-repeat bg-cover">

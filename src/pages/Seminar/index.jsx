@@ -58,7 +58,7 @@ const Seminar = () => {
         </Text>
         <div className="text-white">
           <Countdown
-            date={Date.parse("Nov 7, 2022 11:33:00")}
+            date={Date.parse("Nov 7, 2022 08:00:00")}
             renderer={renderer}
             smooth="true"
           />

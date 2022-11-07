@@ -40,6 +40,7 @@ const sectionThree = () => {
           text="Live Streaming"
           image={LIVE}
           alt="Live Streaming"
+          useATag="https://www.youtube.com/watch?v=-czxscaXw2o"
         />
       </div>
     </div>
